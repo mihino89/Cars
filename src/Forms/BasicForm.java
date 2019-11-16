@@ -23,7 +23,7 @@ public class BasicForm {
         System.out.println("Zadajte nazov auta:");
         this.name = scanner.nextLine();
 
-        System.out.println("Zadajte pocet sedadiel auta:");
+        System.out.println("Zadajte typ auta:");
         this.type = scanner.nextLine();
 
         System.out.println("Zadajte pocet kolies auta:");
@@ -51,5 +51,17 @@ public class BasicForm {
 
     public int getPrice() {
         return price;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 }

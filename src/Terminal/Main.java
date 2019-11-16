@@ -21,7 +21,7 @@ public class Main extends Messages{
          int choice = 0;
          printInstructions();
          while(!quit){
-             System.out.println("Enter your choice");
+             System.out.println("Vyberte si sluzbu");
              choice = scanner.nextInt();
              scanner.nextLine();
 
@@ -44,10 +44,10 @@ public class Main extends Messages{
                  case 5:
                      buyCar();
                      break;
-//                 case 5:
-//                     searchForItem();
-//                     break;
                  case 6:
+                     modifyCarParams();
+                     break;
+                 case 7:
                      quit = true;
                      break;
              }
@@ -63,8 +63,8 @@ public class Main extends Messages{
         System.out.println("\t 3 - To add a new car");
         System.out.println("\t 4 - To remove a car by name");
         System.out.println("\t 5 - To buy a car");
-//        System.out.println("\t 6 - To search");
-        System.out.println("\t 6 - To quit app");
+        System.out.println("\t 6 - To modify a car");
+        System.out.println("\t 7 - To quit app");
     }
 
 
@@ -117,10 +117,16 @@ public class Main extends Messages{
     private static String getCarName(String whichCase){
         String carName;
 
-        if(whichCase.equals("remove")){
-            System.out.println(getMessages(1));
-        } else if (whichCase.equals("buy")) {
-            System.out.println(getMessages(2));
+        switch (whichCase){
+            case "remove":
+                System.out.println(getMessages(1));
+                break;
+            case "buy":
+                System.out.println(getMessages(2));
+                break;
+            case "modify":
+                System.out.println(getMessages(3));
+                break;
         }
         carName = scanner.nextLine();
 
@@ -132,7 +138,7 @@ public class Main extends Messages{
 
         if(chooseCategory == 1){
             String carName = getCarName("remove");
-            personalCarList.removeCar(carName, getMessages(3));
+            personalCarList.removeCar(carName, getMessages(4));
         } else {
             System.out.println(getMessages(0));
         }
@@ -142,11 +148,16 @@ public class Main extends Messages{
     public static void buyCar(){
         int chooseCategory = cattegory();
         int price;
+        String carName;
 
         if(chooseCategory == 1){
-            String carName = getCarName("buy");
-            price = personalCarList.buyCar(carName, getMessages(3));
-            finances.income(price);
+            carName = getCarName("buy");
+            price = personalCarList.buyCar(carName, getMessages(4));
+            if(price >= 0){
+                finances.income(price);
+            } else {
+                System.out.println(getMessages(0));
+            }
         } else if(chooseCategory == 0){
             System.out.println("Chcem kupit nakladne auto");
         } else {
@@ -155,25 +166,15 @@ public class Main extends Messages{
     }
 
 
-//    public static void modifyItem(){
-//        System.out.println("Enter item name: ");
-//        String ItemNo = scanner.nextLine();
-//        System.out.println("Enter replacement item: ");
-//        String newItem = scanner.nextLine();
-//        personalCarList.modifyGroceryItem(ItemNo, newItem);
-//    }
-//
-//    public static void searchForItem(){
-//        System.out.println("Item to search for: ");
-//        String searchItem = scanner.nextLine();
-//
-//        if(personalCarList.onFile(searchItem)){
-//            System.out.println("Found " + searchItem + " in glocary list");
-//        } else {
-//            System.out.println(searchItem + " was didnt find");
-//        }
-//    }
+    public static void modifyCarParams(){
+        int chooseCategory = cattegory();
+        String carName;
 
+        if(chooseCategory == 1){
+            carName = getCarName("modify");
+            personalCarList.modifyCar(carName);
+        }
+    }
 
     //polymorfizmus, dedenie, overloading , overvriting
 

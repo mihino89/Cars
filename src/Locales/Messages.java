@@ -5,6 +5,7 @@ public class Messages {
         "Invalidny vstup.",
         "Prosim zadajte nazov auta ktore chcete vymazat.",
         "Prosim zadajte nazov auta ktore chcete kupit.",
+        "Prosim zadajte nazov auta ktore chcete upravovat.",
         "Auto nebolo najdene v zozname."
     };
 
