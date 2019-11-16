@@ -7,6 +7,7 @@ public class BasicForm {
     private String type;
     private int wheels;
     private int doors;
+    private int price;
     private boolean isManual;
 
     private static Scanner scanner = new Scanner(System.in);
@@ -15,6 +16,7 @@ public class BasicForm {
         this.wheels = wheels;
         this.doors = doors;
         this.isManual = isManual;
+        this.price = price;
     }
 
     public void create(){
@@ -34,6 +36,9 @@ public class BasicForm {
         System.out.println("\tManual: (press 1):");
         System.out.println("\tAutomat: (press 0):");
         this.isManual = scanner.nextInt() == 1;
+
+        System.out.println("Zadajte cenu (v eurach) auta:");
+        this.price = scanner.nextInt();
     }
 
     public String getName() {
@@ -42,5 +47,9 @@ public class BasicForm {
 
     public String getType() {
         return type;
+    }
+
+    public int getPrice() {
+        return price;
     }
 }

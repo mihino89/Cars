@@ -18,7 +18,8 @@ public class PersonalCarList {
         for(int i = 0; i < personalCarArrayList.size(); i++){
             System.out.println((i + 1) + ". Name " + personalCarArrayList.get(i).getName() +
             " Type: " + personalCarArrayList.get(i).getType() + " and is for children: " +
-            personalCarArrayList.get(i).isForChildren());
+            personalCarArrayList.get(i).isForChildren() + " and price is: " +
+            personalCarArrayList.get(i).getBasicForm().getPrice());
         }
     }
 
@@ -29,7 +30,6 @@ public class PersonalCarList {
             }
         }
         return -1;
-//        return personalCarArrayList.indexOf(searchedCar);
     }
 
     // overloading

@@ -22,11 +22,14 @@ public class NewPersonalCarForm{
         System.out.println("\tAno: (press 1):");
         System.out.println("\tNie: (press 0):");
         choice = scanner.nextInt();
+        scanner.nextLine();
 
         if(choice == 1){
             this.forChildren = true;
+        } else{
+            this.forChildren = false;
         }
 
-        return new PersonalCar(basicForm.getName(), basicForm.getType(), basicForm, true);
+        return new PersonalCar(basicForm.getName(), basicForm.getType(), basicForm, this.forChildren);
     }
 }

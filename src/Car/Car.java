@@ -11,8 +11,7 @@ public class Car extends Vehicle {
         this.basicForm = basicForm;
     }
 
-    public void changeVelocity(int speed, int direction){
-        move(speed, direction);
-        System.out.println("Car.changeVelocityt() : Velocity: " + speed + " direction " + direction);
+    public BasicForm getBasicForm() {
+        return this.basicForm;
     }
 }

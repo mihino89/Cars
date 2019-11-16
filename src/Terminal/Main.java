@@ -159,12 +159,6 @@ public class Main{
 //        personalCarList.modifyGroceryItem(ItemNo, newItem);
 //    }
 //
-//    public static void removeItem(){
-//        System.out.println("Enter name of item: ");
-//        String ItemNo = scanner.nextLine();
-//        personalCarList.removeGroceryItem(ItemNo);
-//    }
-//
 //    public static void searchForItem(){
 //        System.out.println("Item to search for: ");
 //        String searchItem = scanner.nextLine();
