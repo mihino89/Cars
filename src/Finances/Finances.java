@@ -11,9 +11,9 @@ public class Finances {
         this.budget = budget;
     }
 
-    public void incomes(int income){
+    public void income(int income){
         this.budget += income;
-        System.out.println("Your actual badget is: " + this.budget);
+        System.out.println("Your new badget is: " + this.budget);
     }
 
     public int getBudget() {

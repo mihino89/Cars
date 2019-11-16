@@ -6,8 +6,6 @@ import java.util.ArrayList;
 
 public class PersonalCarList {
     private ArrayList<PersonalCar> personalCarArrayList = new ArrayList<PersonalCar>();
-    private static Messages messages = new Messages();
-
 
     public void addCar(PersonalCar personalCar){
         personalCarArrayList.add(personalCar);
@@ -37,15 +35,29 @@ public class PersonalCarList {
         personalCarArrayList.remove(position);
     }
 
-    public void removeCar(String carName){
+    public void removeCar(String carName, String errorMessage){
         int position = findCarByName(carName);
 
         if(position >= 0){
             removeCar(position);
             System.out.println("Auto " + carName + " bolo uspesne vymazane");
         } else {
-            System.out.println(messages.getMessages(2));
+            System.out.println(errorMessage);
         }
+    }
+
+    public int buyCar(String carName, String errorMessage){
+        int position = findCarByName(carName);
+        int price = 0;
+
+        if(position >= 0){
+            price = personalCarArrayList.get(position).getBasicForm().getPrice();
+            removeCar(position);
+            return price;
+        }
+
+        System.out.println(errorMessage);
+        return price;
     }
 
 

@@ -9,12 +9,11 @@ import Trucks.TruckList;
 
 import java.util.Scanner;
 
-public class Main{
+public class Main extends Messages{
     private static Scanner scanner = new Scanner(System.in);
     private static PersonalCarList personalCarList = new PersonalCarList();
     private static TruckList truckList = new TruckList();
     private static Finances finances = new Finances();
-    private static Messages messages = new Messages();
 
 
     public static void main(String[] args) {
@@ -45,9 +44,6 @@ public class Main{
                  case 5:
                      buyCar();
                      break;
-//                 case 4:
-//                     removeItem();
-//                     break;
 //                 case 5:
 //                     searchForItem();
 //                     break;
@@ -97,6 +93,8 @@ public class Main{
             personalCarList.printCarList();
         } else if(chooseCattegory == 0){
             truckList.printTruckList();
+        } else {
+            System.out.println(getMessages(0));
         }
     }
 
@@ -111,18 +109,20 @@ public class Main{
             NewTruckForm newTruckForm = new NewTruckForm();
             truckList.addTruck(newTruckForm.create());
         } else{
-            System.out.println(messages.getMessages(0));
+            System.out.println(getMessages(0));
         }
     }
 
 
     private static String getCarName(String whichCase){
-        String carName = "";
+        String carName;
 
         if(whichCase.equals("remove")){
-            System.out.println(messages.getMessages(1));
-            carName = scanner.nextLine();
+            System.out.println(getMessages(1));
+        } else if (whichCase.equals("buy")) {
+            System.out.println(getMessages(2));
         }
+        carName = scanner.nextLine();
 
         return carName;
     }
@@ -132,21 +132,25 @@ public class Main{
 
         if(chooseCategory == 1){
             String carName = getCarName("remove");
-            personalCarList.removeCar(carName);
-
+            personalCarList.removeCar(carName, getMessages(3));
+        } else {
+            System.out.println(getMessages(0));
         }
     }
 
 
     public static void buyCar(){
         int chooseCategory = cattegory();
+        int price;
 
         if(chooseCategory == 1){
-            System.out.println("Chcem kupit osobne auto");
+            String carName = getCarName("buy");
+            price = personalCarList.buyCar(carName, getMessages(3));
+            finances.income(price);
         } else if(chooseCategory == 0){
             System.out.println("Chcem kupit nakladne auto");
         } else {
-            System.out.println("Invalidny vstup");
+            System.out.println(getMessages(0));
         }
     }
 
