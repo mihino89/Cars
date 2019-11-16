@@ -65,9 +65,8 @@ public class Main{
         System.out.println("\t 1 - To check budget");
         System.out.println("\t 2 - To print cars");
         System.out.println("\t 3 - To add a new car");
-        System.out.println("\t 4 - To remove a new car by name");
+        System.out.println("\t 4 - To remove a car by name");
         System.out.println("\t 5 - To buy a car");
-//        System.out.println("\t 5 - To remove");
 //        System.out.println("\t 6 - To search");
         System.out.println("\t 6 - To quit app");
     }
@@ -120,7 +119,7 @@ public class Main{
     private static String getCarName(String whichCase){
         String carName = "";
 
-        if(whichCase == "remove"){
+        if(whichCase.equals("remove")){
             System.out.println(messages.getMessages(1));
             carName = scanner.nextLine();
         }
@@ -132,7 +131,6 @@ public class Main{
         int chooseCategory = cattegory();
 
         if(chooseCategory == 1){
-//            System.out.println("zadatje nazov");
             String carName = getCarName("remove");
             personalCarList.removeCar(carName);
 

@@ -1,9 +1,13 @@
 package PersonalCar;
 
+import Locales.Messages;
+
 import java.util.ArrayList;
 
 public class PersonalCarList {
     private ArrayList<PersonalCar> personalCarArrayList = new ArrayList<PersonalCar>();
+    private static Messages messages = new Messages();
+
 
     public void addCar(PersonalCar personalCar){
         personalCarArrayList.add(personalCar);
@@ -35,13 +39,12 @@ public class PersonalCarList {
 
     public void removeCar(String carName){
         int position = findCarByName(carName);
-        System.out.println("car name position: " + position);
 
         if(position >= 0){
             removeCar(position);
             System.out.println("Auto " + carName + " bolo uspesne vymazane");
         } else {
-            System.out.println("Car wasn't deleted due to wrong index.");
+            System.out.println(messages.getMessages(2));
         }
     }
 

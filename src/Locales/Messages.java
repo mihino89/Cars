@@ -1,9 +1,10 @@
 package Locales;
 
 public class Messages {
-    protected static String[] messagesArray = new String[] {
-        "Invalidny vstup",
-        "Prosim zadajte nazov auta ktore chcete vymazat"
+    private static String[] messagesArray = new String[] {
+        "Invalidny vstup.",
+        "Prosim zadajte nazov auta ktore chcete vymazat.",
+        "Auto nebolo najdene v zozname."
     };
 
     public static String getMessages(int id){
