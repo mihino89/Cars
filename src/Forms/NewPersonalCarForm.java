@@ -6,6 +6,12 @@ import java.util.Scanner;
 
 public class NewPersonalCarForm{
     private boolean forChildren;
+    private BasicForm basicForm;
+
+    public NewPersonalCarForm() {
+        this.forChildren = forChildren;
+        this.basicForm = basicForm;
+    }
 
     private static Scanner scanner = new Scanner(System.in);
 
@@ -15,7 +21,8 @@ public class NewPersonalCarForm{
 
         System.out.println("Welcome in add car form");
 
-        BasicForm basicForm = new BasicForm();
+        //kompozicia
+        this.basicForm = new BasicForm();
         basicForm.create();
 
         System.out.println("Zadajte ci je auto vhode pre deti:");

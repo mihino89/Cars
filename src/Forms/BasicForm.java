@@ -20,8 +20,10 @@ public class BasicForm {
     }
 
     public void create(){
-        System.out.println("Zadajte nazov auta:");
-        this.name = scanner.nextLine();
+        System.out.println("Zadajte nazov vozidla:");
+//        scanner.nextLine();
+        this.name = scanner.next();
+        scanner.nextLine();
 
         System.out.println("Zadajte typ auta:");
         this.type = scanner.nextLine();

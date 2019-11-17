@@ -11,12 +11,15 @@ import java.util.Scanner;
 
 public class Main extends Messages{
     private static Scanner scanner = new Scanner(System.in);
+    // Agregacia
     private static PersonalCarList personalCarList = new PersonalCarList();
     private static TruckList truckList = new TruckList();
+    // enkapsulacia - v main setBudget a v printBufget - getBudget
     private static Finances finances = new Finances();
 
 
     public static void main(String[] args) {
+        finances.setBudget(1000);
          boolean quit = false;
          int choice = 0;
          printInstructions();
@@ -74,14 +77,17 @@ public class Main extends Messages{
 
 
     private static int cattegory(){
-        int chooseCattegory;
+        int chooseCattegory = -1;
 
         System.out.println("Zadajte typy auta:");
         System.out.println("\tLess than 3,5t: (press 1):");
         System.out.println("\tMore than 3,5t: (press 0):");
-        chooseCattegory = scanner.nextInt();
-        scanner.nextLine();
+        boolean hasNextInt = scanner.hasNextInt();
+        if(hasNextInt){
+            chooseCattegory = scanner.nextInt();
+        }
 
+        scanner.nextLine();
         return chooseCattegory;
     }
 
@@ -114,8 +120,8 @@ public class Main extends Messages{
     }
 
 
-    private static String getCarName(String whichCase){
-        String carName;
+    private static String getVehicleName(String whichCase){
+        String vehicleName;
 
         switch (whichCase){
             case "remove":
@@ -128,54 +134,56 @@ public class Main extends Messages{
                 System.out.println(getMessages(3));
                 break;
         }
-        carName = scanner.nextLine();
+        vehicleName = scanner.nextLine();
 
-        return carName;
+        return vehicleName;
     }
 
     private static void toRemoveCar(){
         int chooseCategory = cattegory();
 
+        String vehicleName = getVehicleName("remove");
         if(chooseCategory == 1){
-            String carName = getCarName("remove");
-            personalCarList.removeCar(carName, getMessages(4));
+            personalCarList.removeCar(vehicleName, getMessages(4));
         } else {
-            System.out.println(getMessages(0));
+            truckList.removeTruck(vehicleName, getMessages(4));
         }
     }
 
 
     public static void buyCar(){
         int chooseCategory = cattegory();
-        int price;
-        String carName;
+        int price = -1;
+        String vehicleName;
 
+        vehicleName = getVehicleName("buy");
         if(chooseCategory == 1){
-            carName = getCarName("buy");
-            price = personalCarList.buyCar(carName, getMessages(4));
-            if(price >= 0){
-                finances.income(price);
-            } else {
-                System.out.println(getMessages(0));
-            }
+            price = personalCarList.buyCar(vehicleName, getMessages(4));
         } else if(chooseCategory == 0){
-            System.out.println("Chcem kupit nakladne auto");
+            price = truckList.buyTruck(vehicleName, getMessages(4));
         } else {
             System.out.println(getMessages(0));
+        }
+
+        if(price >= 0){
+            finances.income(price);
         }
     }
 
 
     public static void modifyCarParams(){
         int chooseCategory = cattegory();
-        String carName;
+        String vehicleName;
 
+        vehicleName = getVehicleName("modify");
         if(chooseCategory == 1){
-            carName = getCarName("modify");
-            personalCarList.modifyCar(carName);
+            personalCarList.modifyCar(vehicleName);
+        } else if(chooseCategory == 0){
+            truckList.modifyTruck(vehicleName);
         }
     }
 
     //polymorfizmus, dedenie, overloading , overvriting
+    // moznost vytvorenia noveho auta - vylepsenie kompozicie - komponenty dvere, palubna doska
 
 }

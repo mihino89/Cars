@@ -1,5 +1,7 @@
 package PersonalCar;
 
+import Forms.BasicForm;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -7,23 +9,24 @@ public class PersonalCarList {
     private ArrayList<PersonalCar> personalCarArrayList = new ArrayList<PersonalCar>();
     private static Scanner scanner = new Scanner(System.in);
 
+    //Asociacia
     public void addCar(PersonalCar personalCar){
         personalCarArrayList.add(personalCar);
     }
 
     public void printCarList(){
-        System.out.println("You have " + personalCarArrayList.size() + " items in your grocery list");
+        System.out.println("Finded " + personalCarArrayList.size() + " cars in autobazar database");
         for(int i = 0; i < personalCarArrayList.size(); i++){
             System.out.println((i + 1) + ". Name " + personalCarArrayList.get(i).getBasicForm().getName() +
-            " Number of seats: " + personalCarArrayList.get(i).getBasicForm().getType() + " and is for children: " +
-            personalCarArrayList.get(i).isForChildren() + " , price is: " +
+            " Type is: " + personalCarArrayList.get(i).getBasicForm().getType() + ", is for children: " +
+            personalCarArrayList.get(i).isForChildren() + ", price is: " +
             personalCarArrayList.get(i).getBasicForm().getPrice());
         }
     }
 
     private int findCarByName(String searchedCar){
         for(int i = 0; i < personalCarArrayList.size(); i++){
-            if(searchedCar.equals(personalCarArrayList.get(i).getName())){
+            if(searchedCar.equals(personalCarArrayList.get(i).getBasicForm().getName())){
                 return i;
             }
         }
@@ -61,7 +64,7 @@ public class PersonalCarList {
     }
 
 
-    private void printModiftInstructions(){
+    private void printModifyInstructions(){
         System.out.println("\t 0 - Vypisat menu pre modifikovanie auta");
         System.out.println("\t 1 - Modifikovat nazov auta");
         System.out.println("\t 2 - Modifikovat cenu auta");
@@ -75,7 +78,6 @@ public class PersonalCarList {
         System.out.println("Zadajte novy nazov auta: " + carName);
         newCarName = scanner.nextLine();
         personalCarArrayList.get(position).getBasicForm().setName(newCarName);
-
         System.out.println("Novy nazov auta je: " + personalCarArrayList.get(position).getBasicForm().getName());
     }
 
@@ -107,13 +109,13 @@ public class PersonalCarList {
         if(position >= 0){
             while (!quit){
                 System.out.println("Zadajte vlastnost ktoru chcete editovat v aute: " + carName);
-                printModiftInstructions();
+                printModifyInstructions();
                 choice = scanner.nextInt();
                 scanner.nextLine();
 
                 switch (choice){
                     case 0:
-                        printModiftInstructions();
+                        printModifyInstructions();
                         break;
                     case 1:
                         modifyCarName(position, carName);
@@ -130,14 +132,4 @@ public class PersonalCarList {
             }
         }
     }
-//
-//
-//    public boolean onFile(String searchItem){
-//        int position = findItem(searchItem);
-//        if(position >= 0){
-//            return true;
-//        } else {
-//            return false;
-//        }
-//    }
 }

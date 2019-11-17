@@ -8,16 +8,24 @@ public class NewTruckForm {
     private int maxWeight;
     private boolean hasSemiTrailer;
     private int choice;
+    private BasicForm basicForm;
+
+    public NewTruckForm() {
+        this.maxWeight = maxWeight;
+        this.hasSemiTrailer = hasSemiTrailer;
+        this.choice = choice;
+        this.basicForm = basicForm;
+    }
 
     private static Scanner scanner = new Scanner(System.in);
 
     private boolean hasTrailer(){
-        choice = scanner.nextInt();
+        this.choice = scanner.nextInt();
 
-        if(choice == 1){
+        if(this.choice == 1){
             return true;
         }
-        else if( choice == 0){
+        else if( this.choice == 0){
             return false;
         }
         System.out.println("Zadana zla hodnota. Ano (press 1)/ Nie (press 0)");
@@ -27,7 +35,7 @@ public class NewTruckForm {
     public Truck create(){
         System.out.println("Welcome in add car form");
 
-        BasicForm basicForm = new BasicForm();
+        this.basicForm = new BasicForm();
         basicForm.create();
 
         System.out.println("Zadajte maximalnu zataz nakladu");

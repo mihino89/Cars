@@ -14,8 +14,4 @@ public class PersonalCar extends Car {
     public boolean isForChildren() {
         return forChildren;
     }
-
-    public void setForChildren(boolean forChildren) {
-        this.forChildren = forChildren;
-    }
 }

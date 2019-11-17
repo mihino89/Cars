@@ -14,4 +14,8 @@ public class Car extends Vehicle {
     public BasicForm getBasicForm() {
         return this.basicForm;
     }
+
+    public void setBasicForm(BasicForm basicForm) {
+        this.basicForm = basicForm;
+    }
 }

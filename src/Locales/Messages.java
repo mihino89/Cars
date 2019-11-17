@@ -6,7 +6,7 @@ public class Messages {
         "Prosim zadajte nazov auta ktore chcete vymazat.",
         "Prosim zadajte nazov auta ktore chcete kupit.",
         "Prosim zadajte nazov auta ktore chcete upravovat.",
-        "Auto nebolo najdene v zozname."
+        "Vozidlo nebolo najdene v zozname."
     };
 
     public static String getMessages(int id){
