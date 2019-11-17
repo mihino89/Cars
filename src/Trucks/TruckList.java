@@ -12,12 +12,23 @@ public class TruckList {
     }
 
     public void printTruckList(){
-        System.out.println("Pocet nakladnych vozidiel v databaze: " + truckArrayList.size());
+        System.out.println("Počet nájdených nákladných áut v databáze: " + truckArrayList.size());
+        String hasSemiTrailer;
 
         for(int i = 0; i < truckArrayList.size(); i++){
-            System.out.println((i + 1) + ". Name " + truckArrayList.get(i).getBasicForm().getName() +
-            " Type: " + truckArrayList.get(i).getBasicForm().getType() + " and max weight is : " +
-            truckArrayList.get(i).getMaxWeight());
+            if(truckArrayList.get(i).isHasSemiTrailer()){
+                hasSemiTrailer = "áno";
+            } else {
+                hasSemiTrailer = "nie";
+            }
+            System.out.println((i + 1) +
+            ". Značka: " + truckArrayList.get(i).getBasicForm().getName() +
+            ", Typ: " + truckArrayList.get(i).getBasicForm().getType() +
+            ", Počet kolies: " + truckArrayList.get(i).getBasicForm().getWheels() +
+            ", Počet dverí je: " + truckArrayList.get(i).getBasicForm().getDoors() +
+            ", Maximálna zátaž vozidla: " + truckArrayList.get(i).getMaxWeight() +
+            ", Má príves: " + hasSemiTrailer
+            );
         }
     }
 
@@ -39,7 +50,7 @@ public class TruckList {
 
         if(position >= 0){
             removeTruck(position);
-            System.out.println("Nakladne auto " + truckName + " bolo uspesne vymazane");
+            System.out.println("Nákladne auto " + truckName + " bolo úspešne vymazané");
         } else {
             System.out.println(errorMessage);
         }
@@ -60,40 +71,52 @@ public class TruckList {
     }
 
     private void printModifyInstructions(){
-        System.out.println("\t 0 - Vypisat menu pre modifikovanie nakladneho auta");
-        System.out.println("\t 1 - Modifikovat nazov nakladneho auta");
-        System.out.println("\t 2 - Modifikovat cenu nakladneho auta");
-        System.out.println("\t 3 - Modifikovat typ nakladneho auta");
-        System.out.println("\t 4 - Ukoncit modifikaciu nakladneho auta");
+        System.out.println("\t 0 - Vypísať menu pre modifikovanie nákladneho auta");
+        System.out.println("\t 1 - Modifikovat názov nákladneho auta");
+        System.out.println("\t 2 - Modifikovat cenu nákladneho auta");
+        System.out.println("\t 3 - Modifikovat typ nákladneho auta");
+        System.out.println("\t 4 - Modifikovat maximálnu zátaž nákladneho auta");
+        System.out.println("\t 5 - Ukončit modifikaciu nákladneho auta");
     }
 
     private void modifyTryckName(int position, String truckName){
         String newTruckName;
 
-        System.out.println("Zadajte novy nazov auta: " + truckName);
+        System.out.println("Zadajte nový názov nákladného auta: " + truckName);
         newTruckName = scanner.nextLine();
         truckArrayList.get(position).getBasicForm().setName(newTruckName);
-        System.out.println("Novy nazov auta je: " + truckArrayList.get(position).getBasicForm().getName());
+        System.out.println("Nový názov nákladného auta je: " + truckArrayList.get(position).getBasicForm().getName());
     }
 
     private void modifyTruckPrice(int position, String truckName){
         int newPrice;
 
-        System.out.println("Zadajte novu cenu auta: " + truckName);
+        System.out.println("Zadajte novú cenu nákladného auta: " + truckName);
         newPrice = scanner.nextInt();
         truckArrayList.get(position).getBasicForm().setPrice(newPrice);
 
-        System.out.println("Nova cena auta je: " + truckArrayList.get(position).getBasicForm().getPrice());
+        System.out.println("Nová cena nákladného auta je: " + truckArrayList.get(position).getBasicForm().getPrice());
     }
 
     private void modifyTruckType(int position, String truckName){
         String newTruckType;
 
-        System.out.println("Zadajte novy typ auta: " + truckName);
+        System.out.println("Zadajte nový typ nákladného auta: " + truckName);
         newTruckType = scanner.nextLine();
         truckArrayList.get(position).getBasicForm().setType(newTruckType);
 
-        System.out.println("Novy typ auta je: " + truckArrayList.get(position).getBasicForm().getType());
+        System.out.println("Nový typ nákladného auta je: " + truckArrayList.get(position).getBasicForm().getType());
+    }
+
+    private void modifyMaxWeight(int position, String truckName){
+        int newMaxWeight;
+
+        System.out.println("Zadajte novú maximálnu zátaž nákladného auta: " + truckName);
+        newMaxWeight = scanner.nextInt();
+        scanner.nextLine();
+        truckArrayList.get(position).setMaxWeight(newMaxWeight);
+
+        System.out.println("Nová maximálna záťaž nákladného auta je: " + truckArrayList.get(position).getMaxWeight());
     }
 
     public void modifyTruck(String truckName){
@@ -103,7 +126,7 @@ public class TruckList {
 
         if(position >= 0){
             while (!quit){
-                System.out.println("Zadajte vlastnost ktoru chcete editovat v nakladnom aute: " + truckName);
+                System.out.println("Zadajte vlastnosť ktorú chcete editovať v nákladnom aute: " + truckName);
                 printModifyInstructions();
                 choice = scanner.nextInt();
                 scanner.nextLine();
@@ -120,7 +143,10 @@ public class TruckList {
                         break;
                     case 3:
                         modifyTruckType(position, truckName);
+                        break;
                     case 4:
+
+                    case 5:
                         quit = true;
                         break;
                 }

@@ -22,4 +22,8 @@ public class Truck extends Car {
     public boolean isHasSemiTrailer() {
         return hasSemiTrailer;
     }
+
+    public void setMaxWeight(int maxWeight) {
+        this.maxWeight = maxWeight;
+    }
 }

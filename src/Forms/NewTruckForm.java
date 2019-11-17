@@ -28,24 +28,26 @@ public class NewTruckForm {
         else if( this.choice == 0){
             return false;
         }
-        System.out.println("Zadana zla hodnota. Ano (press 1)/ Nie (press 0)");
+        System.out.println("Bola zadaná zlá hodnota. Ano (stlač 1)/ Nie (stlač 0)");
         return hasTrailer();
     }
 
     public Truck create(){
-        System.out.println("Welcome in add car form");
+        System.out.println("Vitajte vo formulári pre pridanie nového nákladného auta");
 
         this.basicForm = new BasicForm();
         basicForm.create();
 
-        System.out.println("Zadajte maximalnu zataz nakladu");
+        System.out.println("Zadajte maximálnu zátaž nákladu");
         this.maxWeight = scanner.nextInt();
 
-        System.out.println("Je k autu aj prives?");
-        System.out.println("\tAno: (press 1):");
-        System.out.println("\tNie: (press 0):");
+        System.out.println("Je k autu aj príves?");
+        System.out.println("\tÁno: (stlač 1):");
+        System.out.println("\tNie: (stlač 0):");
         this.hasSemiTrailer = hasTrailer();
 
         return new Truck(basicForm.getName(), basicForm.getType(), basicForm, this.maxWeight, this.hasSemiTrailer);
     }
+
+
 }

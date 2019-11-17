@@ -15,12 +15,22 @@ public class PersonalCarList {
     }
 
     public void printCarList(){
-        System.out.println("Finded " + personalCarArrayList.size() + " cars in autobazar database");
+        System.out.println("Počet nájdených osobných áut v databáze: " + personalCarArrayList.size());
+        String isForChildren;
+
         for(int i = 0; i < personalCarArrayList.size(); i++){
-            System.out.println((i + 1) + ". Name " + personalCarArrayList.get(i).getBasicForm().getName() +
-            " Type is: " + personalCarArrayList.get(i).getBasicForm().getType() + ", is for children: " +
-            personalCarArrayList.get(i).isForChildren() + ", price is: " +
-            personalCarArrayList.get(i).getBasicForm().getPrice());
+            if(personalCarArrayList.get(i).isForChildren()){
+                isForChildren = "áno";
+            } else {
+                isForChildren = "nie";
+            }
+            System.out.println((i + 1) +
+            ". Značka: " + personalCarArrayList.get(i).getBasicForm().getName() +
+            ", Typ je: " + personalCarArrayList.get(i).getBasicForm().getType() +
+            ", Počet kolies: " + personalCarArrayList.get(i).getBasicForm().getWheels() +
+            ", Počet dverí je: " + personalCarArrayList.get(i).getBasicForm().getDoors() +
+            ", Je pre deti: " + isForChildren +
+            ", Cena je: " + personalCarArrayList.get(i).getBasicForm().getPrice());
         }
     }
 
@@ -43,7 +53,7 @@ public class PersonalCarList {
 
         if(position >= 0){
             removeCar(position);
-            System.out.println("Auto " + carName + " bolo uspesne vymazane");
+            System.out.println("Auto " + carName + " bolo úspešne vymazané");
         } else {
             System.out.println(errorMessage);
         }
@@ -63,42 +73,41 @@ public class PersonalCarList {
         return price;
     }
 
-
     private void printModifyInstructions(){
-        System.out.println("\t 0 - Vypisat menu pre modifikovanie auta");
-        System.out.println("\t 1 - Modifikovat nazov auta");
-        System.out.println("\t 2 - Modifikovat cenu auta");
-        System.out.println("\t 3 - Modifikovat typ auta");
-        System.out.println("\t 4 - Ukoncit modifikaciu auta");
+        System.out.println("\t 0 - Vypísat menu pre modifikovanie auta");
+        System.out.println("\t 1 - Modifikovať názov auta");
+        System.out.println("\t 2 - Modifikovať cenu auta");
+        System.out.println("\t 3 - Modifikovať typ auta");
+        System.out.println("\t 4 - Ukončiť modifikáciu auta");
     }
 
     private void modifyCarName(int position, String carName){
         String newCarName;
 
-        System.out.println("Zadajte novy nazov auta: " + carName);
+        System.out.println("Zadajte nový názov auta: " + carName);
         newCarName = scanner.nextLine();
         personalCarArrayList.get(position).getBasicForm().setName(newCarName);
-        System.out.println("Novy nazov auta je: " + personalCarArrayList.get(position).getBasicForm().getName());
+        System.out.println("Nový názov auta je: " + personalCarArrayList.get(position).getBasicForm().getName());
     }
 
     private void modifyCarPrice(int position, String carName){
         int newPrice;
 
-        System.out.println("Zadajte novu cenu auta: " + carName);
+        System.out.println("Zadajte novú cenu auta: " + carName);
         newPrice = scanner.nextInt();
         personalCarArrayList.get(position).getBasicForm().setPrice(newPrice);
 
-        System.out.println("Nova cena auta je: " + personalCarArrayList.get(position).getBasicForm().getPrice());
+        System.out.println("Nová cena auta je: " + personalCarArrayList.get(position).getBasicForm().getPrice());
     }
 
     private void modifyCarType(int position, String carName){
         String newCarType;
 
-        System.out.println("Zadajte novy typ auta: " + carName);
+        System.out.println("Zadajte nový typ auta: " + carName);
         newCarType = scanner.nextLine();
         personalCarArrayList.get(position).getBasicForm().setType(newCarType);
 
-        System.out.println("Novy typ auta je: " + personalCarArrayList.get(position).getBasicForm().getType());
+        System.out.println("Nový typ auta je: " + personalCarArrayList.get(position).getBasicForm().getType());
     }
 
     public void modifyCar(String carName){
@@ -108,7 +117,7 @@ public class PersonalCarList {
 
         if(position >= 0){
             while (!quit){
-                System.out.println("Zadajte vlastnost ktoru chcete editovat v aute: " + carName);
+                System.out.println("Zadajte vlastnosť ktorú chcete editovat v aute: " + carName);
                 printModifyInstructions();
                 choice = scanner.nextInt();
                 scanner.nextLine();

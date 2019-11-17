@@ -20,39 +20,42 @@ public class Main extends Messages{
 
     public static void main(String[] args) {
         finances.setBudget(1000);
-         boolean quit = false;
+         boolean quit = false, hasNextInt;
          int choice = 0;
-         printInstructions();
          while(!quit){
-             System.out.println("Vyberte si sluzbu");
-             choice = scanner.nextInt();
-             scanner.nextLine();
+             System.out.println("Vyberte si službu");
+             printInstructions();
+             hasNextInt = scanner.hasNextInt();
+             if(hasNextInt){
+                 choice = scanner.nextInt();
+                 scanner.nextLine();
 
-             switch (choice){
-                 case 0:
-                     printInstructions();
-                     break;
-                 case 1:
-                     printBudget();
-                     break;
-                 case 2:
-                     printListOfCars();
-                     break;
-                 case 3:
-                     addCar();
-                     break;
-                 case 4:
-                     toRemoveCar();
-                     break;
-                 case 5:
-                     buyCar();
-                     break;
-                 case 6:
-                     modifyCarParams();
-                     break;
-                 case 7:
-                     quit = true;
-                     break;
+                 switch (choice){
+                     case 0:
+                         printInstructions();
+                         break;
+                     case 1:
+                         printBudget();
+                         break;
+                     case 2:
+                         printListOfCars();
+                         break;
+                     case 3:
+                         addCar();
+                         break;
+                     case 4:
+                         toRemoveCar();
+                         break;
+                     case 5:
+                         buyCar();
+                         break;
+                     case 6:
+                         modifyCarParams();
+                         break;
+                     case 7:
+                         quit = true;
+                         break;
+                 }
              }
          }
     }
@@ -60,28 +63,28 @@ public class Main extends Messages{
 
     public static void printInstructions(){
         System.out.println("\n Press");
-        System.out.println("\t 0 - To print choice options");
-        System.out.println("\t 1 - To check budget");
-        System.out.println("\t 2 - To print cars");
-        System.out.println("\t 3 - To add a new car");
-        System.out.println("\t 4 - To remove a car by name");
-        System.out.println("\t 5 - To buy a car");
-        System.out.println("\t 6 - To modify a car");
-        System.out.println("\t 7 - To quit app");
+        System.out.println("\t 0 - Hlavné menu");
+        System.out.println("\t 1 - Financie autobazáru");
+        System.out.println("\t 2 - Vypísať autá");
+        System.out.println("\t 3 - Pridať nové auto na predaj");
+        System.out.println("\t 4 - Vymazať auto podla značky");
+        System.out.println("\t 5 - Kúpiť auto");
+        System.out.println("\t 6 - Modifikovať parametre auta");
+        System.out.println("\t 7 - Ukončiť aplikáciu");
     }
 
 
     private static void printBudget(){
-        System.out.println("Budget autobazaru je: " + finances.getBudget());
+        System.out.println("Budget autobazáru je: " + finances.getBudget());
     }
 
 
     private static int cattegory(){
         int chooseCattegory = -1;
 
-        System.out.println("Zadajte typy auta:");
-        System.out.println("\tLess than 3,5t: (press 1):");
-        System.out.println("\tMore than 3,5t: (press 0):");
+        System.out.println("Zadajte typ auta:");
+        System.out.println("\tMenej ako 3,5t: (stlač 1):");
+        System.out.println("\tViac ako 3,5t: (stlač 0):");
         boolean hasNextInt = scanner.hasNextInt();
         if(hasNextInt){
             chooseCattegory = scanner.nextInt();

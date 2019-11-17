@@ -2,11 +2,11 @@ package Locales;
 
 public class Messages {
     private static String[] messagesArray = new String[] {
-        "Invalidny vstup.",
-        "Prosim zadajte nazov auta ktore chcete vymazat.",
-        "Prosim zadajte nazov auta ktore chcete kupit.",
-        "Prosim zadajte nazov auta ktore chcete upravovat.",
-        "Vozidlo nebolo najdene v zozname."
+        "Invalidný vstup.",
+        "Prosím zadajte názov auta ktoré chcete vymazať.",
+        "Prosím zadajte názov auta ktoré chcete kúpit.",
+        "Prosím zadajte názov auta ktoré chcete upravovať.",
+        "Vozidlo nebolo nájdene v zozname."
     };
 
     public static String getMessages(int id){

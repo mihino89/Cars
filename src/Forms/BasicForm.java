@@ -20,7 +20,7 @@ public class BasicForm {
     }
 
     public void create(){
-        System.out.println("Zadajte nazov vozidla:");
+        System.out.println("Zadajte značku vozidla:");
 //        scanner.nextLine();
         this.name = scanner.next();
         scanner.nextLine();
@@ -28,18 +28,18 @@ public class BasicForm {
         System.out.println("Zadajte typ auta:");
         this.type = scanner.nextLine();
 
-        System.out.println("Zadajte pocet kolies auta:");
+        System.out.println("Zadajte počet kolies auta:");
         this.wheels = scanner.nextInt();
 
-        System.out.println("Zadajte pocet dveri auta:");
+        System.out.println("Zadajte počet dverí auta:");
         this.doors = scanner.nextInt();
 
         System.out.println("Zadajte typ prevodovky auta:");
-        System.out.println("\tManual: (press 1):");
-        System.out.println("\tAutomat: (press 0):");
+        System.out.println("\tManual: (stlačte 1):");
+        System.out.println("\tAutomat: (stlačte 0):");
         this.isManual = scanner.nextInt() == 1;
 
-        System.out.println("Zadajte cenu (v eurach) auta:");
+        System.out.println("Zadajte cenu (v eurách) auta:");
         this.price = scanner.nextInt();
     }
 
@@ -49,6 +49,14 @@ public class BasicForm {
 
     public String getType() {
         return type;
+    }
+
+    public int getWheels() {
+        return wheels;
+    }
+
+    public int getDoors() {
+        return doors;
     }
 
     public int getPrice() {

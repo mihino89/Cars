@@ -19,15 +19,15 @@ public class NewPersonalCarForm{
     public PersonalCar create() {
         int choice;
 
-        System.out.println("Welcome in add car form");
+        System.out.println("Vitajte vo formulári pre pridanie nového auta");
 
         //kompozicia
         this.basicForm = new BasicForm();
         basicForm.create();
 
-        System.out.println("Zadajte ci je auto vhode pre deti:");
-        System.out.println("\tAno: (press 1):");
-        System.out.println("\tNie: (press 0):");
+        System.out.println("Zadajte či je auto vhodné pre deti:");
+        System.out.println("\tÁno: (stlačte 1):");
+        System.out.println("\tNie: (stlačte 0):");
         choice = scanner.nextInt();
         scanner.nextLine();
 
