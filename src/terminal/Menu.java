@@ -1,7 +1,7 @@
-package Terminal;
+package terminal;
 
-import Finances.Finances;
-import Locales.Messages;
+import finances.Finances;
+import locales.Messages;
 
 import java.util.Scanner;
 

@@ -1,7 +1,6 @@
-package PersonalCar;
+package personalCar;
 
-import Car.Car;
-import Forms.BasicForm;
+import car.Car;
 
 public class PersonalCar extends Car {
     private boolean forChildren;
@@ -13,5 +12,9 @@ public class PersonalCar extends Car {
 
     public boolean isForChildren() {
         return forChildren;
+    }
+
+    public String created(){
+        return "Personal car was created.";
     }
 }

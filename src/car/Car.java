@@ -1,4 +1,4 @@
-package Car;
+package car;
 
 public class Car extends Vehicle {
     private int wheels;
@@ -16,7 +16,7 @@ public class Car extends Vehicle {
 
 
     public String created(){
-        return "Car was created.";
+        return "car was created.";
     }
 
     public int getWheels() {

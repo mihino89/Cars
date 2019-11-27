@@ -1,9 +1,6 @@
-package Trucks;
+package trucks;
 
-import Car.Car;
-import Forms.BasicForm;
-
-import java.util.Base64;
+import car.Car;
 
 public class Truck extends Car {
     private int maxWeight;

@@ -1,16 +1,16 @@
-package Forms;
+package forms;
 
-import PersonalCar.PersonalCar;
+import personalCar.PersonalCar;
 
 import java.util.Scanner;
 
-public class NewPersonalCarForm{
+public class PersonalCarForm {
     private static Scanner scanner = new Scanner(System.in);
 
     private boolean forChildren;
     private BasicForm basicForm;
 
-    public NewPersonalCarForm() {
+    public PersonalCarForm() {
         this.forChildren = forChildren;
         this.basicForm = basicForm;
     }

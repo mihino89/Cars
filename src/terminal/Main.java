@@ -1,4 +1,4 @@
-package Terminal;
+package terminal;
 
 public class Main {
     private static Menu menu;

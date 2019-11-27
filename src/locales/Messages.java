@@ -1,4 +1,4 @@
-package Locales;
+package locales;
 
 public class Messages {
     private static String[] messagesArray = new String[] {

@@ -1,4 +1,4 @@
-package Forms;
+package forms;
 
 import java.util.Scanner;
 
@@ -68,13 +68,5 @@ public class BasicForm {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public void setPrice(int price) {
-        this.price = price;
-    }
-
-    public void setType(String type) {
-        this.type = type;
     }
 }

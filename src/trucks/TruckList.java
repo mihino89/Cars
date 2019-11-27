@@ -1,4 +1,4 @@
-package Trucks;
+package trucks;
 
 import java.util.ArrayList;
 import java.util.Scanner;

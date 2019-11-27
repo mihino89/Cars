@@ -1,9 +1,9 @@
-package Terminal;
+package terminal;
 
-import Forms.NewPersonalCarForm;
-import Forms.NewTruckForm;
-import PersonalCar.PersonalCarList;
-import Trucks.TruckList;
+import forms.PersonalCarForm;
+import forms.TruckForm;
+import personalCar.PersonalCarList;
+import trucks.TruckList;
 
 import java.util.Scanner;
 
@@ -98,11 +98,11 @@ public class Autobazar extends Menu{
         int chooseCattegory = scanInput();
 
         if( chooseCattegory == 1){
-            NewPersonalCarForm newPersonalCarForm = new NewPersonalCarForm();
-            personalCarList.addCar(newPersonalCarForm.create());
+            PersonalCarForm personalCarForm = new PersonalCarForm();
+            personalCarList.addCar(personalCarForm.create());
         } else if( chooseCattegory == 0){
-            NewTruckForm newTruckForm = new NewTruckForm();
-            truckList.addTruck(newTruckForm.create());
+            TruckForm truckForm = new TruckForm();
+            truckList.addTruck(truckForm.create());
         } else{
             System.out.println(getMessages(0));
         }

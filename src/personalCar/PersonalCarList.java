@@ -1,4 +1,4 @@
-package PersonalCar;
+package personalCar;
 
 import java.util.ArrayList;
 import java.util.Scanner;

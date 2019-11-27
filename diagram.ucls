@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.3" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="Finances.Finances" project="ArrayList" 
-    file="/ArrayList/src/Finances/Finances.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="1" language="java" name="finances.finances" project="ArrayList"
+    file="/ArrayList/src/finances/finances.java" binary="false" corner="BOTTOM_RIGHT">
     <position height="196" width="156" x="964" y="204"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -10,8 +10,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="Forms.NewTruckForm" project="ArrayList" 
-    file="/ArrayList/src/Forms/NewTruckForm.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="2" language="java" name="forms.TruckForm" project="ArrayList"
+    file="/ArrayList/src/forms/NewTruckForm.java" binary="false" corner="BOTTOM_RIGHT">
     <position height="216" width="195" x="473" y="204"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -19,8 +19,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="PersonalCar.PersonalCar" project="ArrayList" 
-    file="/ArrayList/src/PersonalCar/PersonalCar.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="3" language="java" name="personalCar.personalCar" project="ArrayList"
+    file="/ArrayList/src/personalCar/personalCar.java" binary="false" corner="BOTTOM_RIGHT">
     <position height="136" width="351" x="1631" y="580"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -28,7 +28,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="Terminal.Autobazar" project="ArrayList" file="/ArrayList/src/Terminal/Main.java"
+  <class id="4" language="java" name="terminal.Autobazar" project="ArrayList" file="/ArrayList/src/terminal/Main.java"
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="316" width="237" x="1160" y="-152"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -37,8 +37,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="PersonalCar.PersonalCarList" project="ArrayList" 
-    file="/ArrayList/src/PersonalCar/PersonalCarList.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="5" language="java" name="personalCar.PersonalCarList" project="ArrayList"
+    file="/ArrayList/src/personalCar/PersonalCarList.java" binary="false" corner="BOTTOM_RIGHT">
     <position height="336" width="244" x="1738" y="204"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -46,7 +46,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="Car.Car" project="ArrayList" file="/ArrayList/src/Car/Car.java" binary="false" 
+  <class id="6" language="java" name="car.car" project="ArrayList" file="/ArrayList/src/car/car.java" binary="false"
     corner="BOTTOM_RIGHT">    
     <position height="136" width="244" x="1454" y="204"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -55,7 +55,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="7" language="java" name="Locales.Messages" project="ArrayList" file="/ArrayList/src/Locales/Messages.java" 
+  <class id="7" language="java" name="locales.Messages" project="ArrayList" file="/ArrayList/src/locales/Messages.java"
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="136" width="193" x="1160" y="-328"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -64,7 +64,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="8" language="java" name="Forms.BasicForm" project="ArrayList" file="/ArrayList/src/Forms/BasicForm.java" 
+  <class id="8" language="java" name="forms.BasicForm" project="ArrayList" file="/ArrayList/src/forms/BasicForm.java"
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="376" width="173" x="708" y="580"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -73,7 +73,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="9" language="java" name="Car.Vehicle" project="ArrayList" file="/ArrayList/src/Car/Vehicle.java" 
+  <class id="9" language="java" name="car.Vehicle" project="ArrayList" file="/ArrayList/src/car/Vehicle.java"
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="176" width="173" x="1454" y="-152"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -82,8 +82,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="10" language="java" name="Forms.NewPersonalCarForm" project="ArrayList" 
-    file="/ArrayList/src/Forms/NewPersonalCarForm.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="10" language="java" name="forms.PersonalCarForm" project="ArrayList"
+    file="/ArrayList/src/forms/NewPersonalCarForm.java" binary="false" corner="BOTTOM_RIGHT">
     <position height="156" width="216" x="708" y="204"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -91,7 +91,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="11" language="java" name="Trucks.Truck" project="ArrayList" file="/ArrayList/src/Trucks/Truck.java" 
+  <class id="11" language="java" name="trucks.Truck" project="ArrayList" file="/ArrayList/src/trucks/Truck.java"
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="176" width="320" x="1271" y="580"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -100,7 +100,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="12" language="java" name="Trucks.TruckList" project="ArrayList" file="/ArrayList/src/Trucks/TruckList.java" 
+  <class id="12" language="java" name="trucks.TruckList" project="ArrayList" file="/ArrayList/src/trucks/TruckList.java"
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="336" width="254" x="1160" y="204"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 

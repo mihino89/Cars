@@ -1,16 +1,16 @@
-package Forms;
+package forms;
 
-import Trucks.Truck;
+import trucks.Truck;
 
 import java.util.Scanner;
 
-public class NewTruckForm {
+public class TruckForm {
     private int maxWeight;
     private boolean hasSemiTrailer;
     private int choice;
     private BasicForm basicForm;
 
-    public NewTruckForm() {
+    public TruckForm() {
         this.maxWeight = maxWeight;
         this.hasSemiTrailer = hasSemiTrailer;
         this.choice = choice;

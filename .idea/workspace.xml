@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd11aa26-00c2-4cfd-8d2c-638da2a24862" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Car/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Car/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Car/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/35/90eb7ede6809001a10e7c2eb7dd7f980" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/35/90eb7ede6809001a10e7c2eb7dd7f980" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagram.ucls" beforeDir="false" afterPath="$PROJECT_DIR$/diagram.ucls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Forms/BasicForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Forms/BasicForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Forms/NewPersonalCarForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Forms/NewPersonalCarForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Forms/NewTruckForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Forms/NewTruckForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Forms/NewPersonalCarForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Forms/PersonalCarForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Forms/NewTruckForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Forms/TruckForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PersonalCar/PersonalCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PersonalCar/PersonalCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PersonalCar/PersonalCarList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PersonalCar/PersonalCarList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Trucks/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Trucks/Truck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Trucks/TruckList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Trucks/TruckList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Terminal/Autobazar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Terminal/Autobazar.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,11 +23,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Terminal/Autobazar.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="103" column="28" lean-forward="true" selection-start-line="103" selection-start-column="28" selection-end-line="103" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Terminal/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="192">
               <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Forms/TruckForm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-200">
+              <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Terminal/Menu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PersonalCar/PersonalCar.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Car/Car.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -54,6 +98,7 @@
       <find>removeCar</find>
       <find>getTy</find>
       <find>static</find>
+      <find>setName(</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -75,16 +120,16 @@
         <option value="$PROJECT_DIR$/src/Terminal/Main.java" />
         <option value="$PROJECT_DIR$/src/Finances/Finances.java" />
         <option value="$PROJECT_DIR$/src/Terminal/Menu.java" />
-        <option value="$PROJECT_DIR$/src/Terminal/Autobazar.java" />
-        <option value="$PROJECT_DIR$/src/PersonalCar/PersonalCar.java" />
-        <option value="$PROJECT_DIR$/src/Forms/BasicForm.java" />
         <option value="$PROJECT_DIR$/src/Forms/NewPersonalCarForm.java" />
         <option value="$PROJECT_DIR$/src/Trucks/Truck.java" />
         <option value="$PROJECT_DIR$/src/Forms/NewTruckForm.java" />
         <option value="$PROJECT_DIR$/src/Car/Vehicle.java" />
-        <option value="$PROJECT_DIR$/src/Car/Car.java" />
         <option value="$PROJECT_DIR$/src/Trucks/TruckList.java" />
         <option value="$PROJECT_DIR$/src/PersonalCar/PersonalCarList.java" />
+        <option value="$PROJECT_DIR$/src/Forms/BasicForm.java" />
+        <option value="$PROJECT_DIR$/src/PersonalCar/PersonalCar.java" />
+        <option value="$PROJECT_DIR$/src/Car/Car.java" />
+        <option value="$PROJECT_DIR$/src/Terminal/Autobazar.java" />
       </list>
     </option>
   </component>
@@ -113,18 +158,6 @@
               <item name="Autobazar" type="b2602c69:ProjectViewProjectNode" />
               <item name="Autobazar" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Autobazar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Autobazar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Car" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Autobazar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Autobazar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Finances" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Autobazar" type="b2602c69:ProjectViewProjectNode" />
@@ -160,7 +193,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../OOP/PolymorphismPractise" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -176,24 +209,11 @@
   </component>
   <component name="RunManager" selected="Application.Main (1)">
     <configuration name="Autobazar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Terminal.Autobazar" />
+      <option name="MAIN_CLASS_NAME" value="terminal.Autobazar" />
       <module name="Autobazar" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Terminal.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Terminal.Main" />
-      <module name="Autobazar" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Terminal.*" />
+          <option name="PATTERN" value="terminal.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -207,6 +227,19 @@
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="terminal.Main" />
+      <module name="Autobazar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="terminal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -263,12 +296,12 @@
       <workItem from="1573746882671" duration="33365000" />
       <workItem from="1573994500434" duration="4756000" />
       <workItem from="1574774321239" duration="6034000" />
-      <workItem from="1574877571390" duration="5280000" />
+      <workItem from="1574877571390" duration="7305000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76403000" />
+    <option name="totallyTimeSpent" value="78428000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -282,7 +315,7 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32854578" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32824427" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.7197383" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -447,52 +480,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Terminal/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Finances/Finances.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PersonalCar/PersonalCar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Forms/NewPersonalCarForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="39" column="31" lean-forward="true" selection-start-line="39" selection-start-column="31" selection-end-line="40" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Forms/BasicForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Forms/NewTruckForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Trucks/Truck.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        <state relative-caret-position="360">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Trucks/TruckList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1120">
+          <caret line="119" column="5" lean-forward="true" selection-start-line="119" selection-start-column="5" selection-end-line="119" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PersonalCar/PersonalCarList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -503,31 +508,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Finances/Finances.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Forms/BasicForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Forms/PersonalCarForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Forms/TruckForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-200">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PersonalCar/PersonalCar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Car/Car.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="36" column="24" lean-forward="true" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Trucks/TruckList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="119" column="5" lean-forward="true" selection-start-line="119" selection-start-column="5" selection-end-line="119" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PersonalCar/PersonalCarList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="83" column="61" lean-forward="true" selection-start-line="83" selection-start-column="61" selection-end-line="83" selection-end-column="61" />
+        <state relative-caret-position="336">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Terminal/Autobazar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2232">
-          <caret line="93" column="5" lean-forward="true" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+        <state relative-caret-position="240">
+          <caret line="103" column="28" lean-forward="true" selection-start-line="103" selection-start-column="28" selection-end-line="103" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Terminal/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
         </state>
       </provider>
     </entry>
