@@ -1,29 +1,38 @@
 package Terminal;
 
 import Finances.Finances;
+import Locales.Messages;
 
 import java.util.Scanner;
 
-public class Menu {
+public class Menu extends Messages {
     private static Scanner scanner = new Scanner(System.in);
     private static Finances finances = new Finances();
     private static Autobazar autobazar;
 
+    private final int startingCapital = 1000;
 
     public void createDialog(){
-        finances.setBudget(1000);
+        boolean quit = false;
+        setBudget();
 
-        mainDialog();
-        switch (scanInput()) {
-            case 0:
-                System.out.println("ahooj");
-                break;
-            case 1:
-                autobazar = new Autobazar();
-                autobazar.dialog();
-                break;
-            case 2:
-                System.out.println("Your budget is: " + finances.getBudget());
+        while(!quit){
+            mainDialog();
+            switch (scanInput()) {
+                case 0:
+                    System.out.println("ahooj");
+                    break;
+                case 1:
+                    autobazar = new Autobazar();
+                    autobazar.dialog();
+                    break;
+                case 2:
+                    getBudget();
+                    break;
+                case 3:
+                    quit = true;
+                    break;
+            }
         }
     }
 
@@ -32,9 +41,10 @@ public class Menu {
         System.out.println("\t 0 - Nové autá");
         System.out.println("\t 1 - Autobazár");
         System.out.println("\t 2 - Financie");
+        System.out.println("\t 3 - Ukončiť aplikáciu");
     }
 
-    private int scanInput(){
+    protected int scanInput(){
         int choice = -1;
         boolean hasNextInt = scanner.hasNextInt();
 
@@ -44,5 +54,17 @@ public class Menu {
 
         scanner.nextLine();
         return choice;
+    }
+
+    protected void setBudget(int price){
+        finances.income(price);
+    }
+
+    private void setBudget(){
+        finances.setBudget(startingCapital);
+    }
+
+    protected void getBudget(){
+        System.out.println("Aktualny stav financii: " + finances.getBudget());
     }
 }

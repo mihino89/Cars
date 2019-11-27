@@ -13,7 +13,7 @@ public class Finances {
 
     public void income(int income){
         this.budget += income;
-        System.out.println("Your new badget is: " + this.budget);
+        System.out.println("Novy stav financii: " + this.budget);
     }
 
     public int getBudget() {

@@ -1,24 +1,19 @@
 package Terminal;
 
-import Finances.Finances;
 import Forms.NewPersonalCarForm;
 import Forms.NewTruckForm;
-import Locales.Messages;
 import PersonalCar.PersonalCarList;
 import Trucks.TruckList;
 
 import java.util.Scanner;
 
-public class Autobazar extends Messages{
+public class Autobazar extends Menu{
     private static Scanner scanner = new Scanner(System.in);
     // Agregacia
     private static PersonalCarList personalCarList = new PersonalCarList();
     private static TruckList truckList = new TruckList();
-    // enkapsulacia - v main setBudget a v printBufget - getBudget
-    private static Finances finances = new Finances(); // Finances budu v Main
 
     public void dialog() {
-        finances.setBudget(1000);
          boolean quit = false, hasNextInt;
          int choice = 0;
          while(!quit){
@@ -34,24 +29,21 @@ public class Autobazar extends Messages{
                          printInstructions();
                          break;
                      case 1:
-                         printBudget();
-                         break;
-                     case 2:
                          printListOfCars();
                          break;
-                     case 3:
+                     case 2:
                          addCar();
                          break;
-                     case 4:
+                     case 3:
                          toRemoveCar();
                          break;
-                     case 5:
+                     case 4:
                          buyCar();
                          break;
-                     case 6:
+                     case 5:
                          modifyCarParams();
                          break;
-                     case 7:
+                     case 6:
                          quit = true;
                          break;
                  }
@@ -60,25 +52,20 @@ public class Autobazar extends Messages{
     }
 
 
-    public static void printInstructions() {
+    private void printInstructions() {
         System.out.println("\n Press");
         System.out.println("\t 0 - Menu autobázaru");
-        System.out.println("\t 1 - Financie autobazáru");
-        System.out.println("\t 2 - Vypísať autá");
-        System.out.println("\t 3 - Pridať nové auto na predaj");
-        System.out.println("\t 4 - Vymazať auto podla značky");
-        System.out.println("\t 5 - Kúpiť auto");
-        System.out.println("\t 6 - Modifikovať parametre auta");
-        System.out.println("\t 7 - Ukončiť aplikáciu");
+        System.out.println("\t 1 - Vypísať autá");
+        System.out.println("\t 2 - Pridať nové auto na predaj");
+        System.out.println("\t 3 - Vymazať auto podla značky");
+        System.out.println("\t 4 - Kúpiť auto");
+        System.out.println("\t 5 - Modifikovať parametre auta");
+        System.out.println("\t 6 - Prejsť na hlavné menu");
     }
 
 
-    private static void printBudget(){
-        System.out.println("Budget autobazáru je: " + finances.getBudget());
-    }
-
-
-    private static int cattegory(){
+    @Override
+    protected int scanInput() {
         int chooseCattegory = -1;
 
         System.out.println("Zadajte typ auta:");
@@ -94,8 +81,8 @@ public class Autobazar extends Messages{
     }
 
 
-    public static void printListOfCars(){
-        int chooseCattegory = cattegory();
+    private void printListOfCars(){
+        int chooseCattegory = scanInput();
 
         if(chooseCattegory == 1){
             personalCarList.printCarList();
@@ -107,8 +94,8 @@ public class Autobazar extends Messages{
     }
 
 
-    public static void addCar(){
-        int chooseCattegory = cattegory();
+    private void addCar(){
+        int chooseCattegory = scanInput();
 
         if( chooseCattegory == 1){
             NewPersonalCarForm newPersonalCarForm = new NewPersonalCarForm();
@@ -122,7 +109,7 @@ public class Autobazar extends Messages{
     }
 
 
-    private static String getVehicleName(String whichCase){
+    private String getVehicleName(String whichCase){
         String vehicleName;
 
         switch (whichCase){
@@ -141,8 +128,8 @@ public class Autobazar extends Messages{
         return vehicleName;
     }
 
-    private static void toRemoveCar(){
-        int chooseCategory = cattegory();
+    private void toRemoveCar(){
+        int chooseCategory = scanInput();
 
         String vehicleName = getVehicleName("remove");
         if(chooseCategory == 1){
@@ -153,8 +140,8 @@ public class Autobazar extends Messages{
     }
 
 
-    public static void buyCar(){
-        int chooseCategory = cattegory();
+    private void buyCar(){
+        int chooseCategory = scanInput();
         int price = -1;
         String vehicleName;
 
@@ -168,13 +155,13 @@ public class Autobazar extends Messages{
         }
 
         if(price >= 0){
-            finances.income(price);
+            setBudget(price);
         }
     }
 
 
-    public static void modifyCarParams(){
-        int chooseCategory = cattegory();
+    private void modifyCarParams(){
+        int chooseCategory = scanInput();
         String vehicleName;
 
         vehicleName = getVehicleName("modify");
@@ -187,5 +174,4 @@ public class Autobazar extends Messages{
 
     //polymorfizmus, dedenie, overloading , overvriting
     // moznost vytvorenia noveho auta - vylepsenie kompozicie - komponenty dvere, palubna doska
-
 }
