@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd11aa26-00c2-4cfd-8d2c-638da2a24862" name="Default Changelist" comment="">
+    <list default="true" id="fd11aa26-00c2-4cfd-8d2c-638da2a24862" name="Default Changelist" comment="&quot;package conventions fixed&quot;">
+      <change afterPath="$PROJECT_DIR$/src/carShop/CarShop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/35/90eb7ede6809001a10e7c2eb7dd7f980" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/35/90eb7ede6809001a10e7c2eb7dd7f980" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diagram.ucls" beforeDir="false" afterPath="$PROJECT_DIR$/diagram.ucls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Forms/BasicForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Forms/BasicForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Forms/NewPersonalCarForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Forms/PersonalCarForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Forms/NewTruckForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Forms/TruckForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PersonalCar/PersonalCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PersonalCar/PersonalCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Terminal/Autobazar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Terminal/Autobazar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Autobazar/Terminal/Autobazar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Autobazar/Terminal/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Autobazar/Terminal/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/terminal/Autobazar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/autobazar/Autobazar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/terminal/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/terminal/Menu.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,55 +23,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Terminal/Autobazar.java">
+        <entry file="file://$PROJECT_DIR$/src/autobazar/Autobazar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="103" column="28" lean-forward="true" selection-start-line="103" selection-start-column="28" selection-end-line="103" selection-end-column="28" />
+            <state relative-caret-position="216">
+              <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="49" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/terminal/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/carShop/CarShop.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Terminal/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Forms/TruckForm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-200">
-              <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Terminal/Menu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PersonalCar/PersonalCar.java">
+        <entry file="file://$PROJECT_DIR$/src/terminal/Menu.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="456">
-              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Car/Car.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+              <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -130,6 +111,10 @@
         <option value="$PROJECT_DIR$/src/PersonalCar/PersonalCar.java" />
         <option value="$PROJECT_DIR$/src/Car/Car.java" />
         <option value="$PROJECT_DIR$/src/Terminal/Autobazar.java" />
+        <option value="$PROJECT_DIR$/src/terminal/Autobazar.java" />
+        <option value="$PROJECT_DIR$/src/autobazar/Autobazar.java" />
+        <option value="$PROJECT_DIR$/src/carShop/CarShop.java" />
+        <option value="$PROJECT_DIR$/src/terminal/Menu.java" />
       </list>
     </option>
   </component>
@@ -163,25 +148,7 @@
               <item name="Autobazar" type="b2602c69:ProjectViewProjectNode" />
               <item name="Autobazar" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Forms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Autobazar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Autobazar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="PersonalCar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Autobazar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Autobazar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Terminal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Autobazar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Autobazar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Trucks" type="462c0819:PsiDirectoryNode" />
+              <item name="terminal" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -209,11 +176,11 @@
   </component>
   <component name="RunManager" selected="Application.Main (1)">
     <configuration name="Autobazar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="terminal.Autobazar" />
+      <option name="MAIN_CLASS_NAME" value="autobazar.Autobazar" />
       <module name="Autobazar" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="terminal.*" />
+          <option name="PATTERN" value="autobazar.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -236,7 +203,7 @@
       <module name="Autobazar" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="terminal.*" />
+          <option name="PATTERN" value="autobazar.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -296,18 +263,26 @@
       <workItem from="1573746882671" duration="33365000" />
       <workItem from="1573994500434" duration="4756000" />
       <workItem from="1574774321239" duration="6034000" />
-      <workItem from="1574877571390" duration="7305000" />
+      <workItem from="1574877571390" duration="8926000" />
     </task>
+    <task id="LOCAL-00001" summary="&quot;package conventions fixed&quot;">
+      <created>1574885146507</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1574885146507</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78428000" />
+    <option name="totallyTimeSpent" value="80049000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17324094" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17324094" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -371,6 +346,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;package conventions fixed&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;package conventions fixed&quot;" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Forms/FormDialog.java" />
@@ -473,101 +452,108 @@
         <state relative-caret-position="-3993" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Locales/Messages.java">
+    <entry file="file://$PROJECT_DIR$/src/locales/Messages.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Trucks/Truck.java">
+    <entry file="file://$PROJECT_DIR$/src/trucks/Truck.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Trucks/TruckList.java">
+    <entry file="file://$PROJECT_DIR$/src/trucks/TruckList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1120">
           <caret line="119" column="5" lean-forward="true" selection-start-line="119" selection-start-column="5" selection-end-line="119" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PersonalCar/PersonalCarList.java">
+    <entry file="file://$PROJECT_DIR$/src/personalCar/PersonalCarList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Car/Vehicle.java">
+    <entry file="file://$PROJECT_DIR$/src/car/Vehicle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Finances/Finances.java">
+    <entry file="file://$PROJECT_DIR$/src/finances/Finances.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Forms/BasicForm.java">
+    <entry file="file://$PROJECT_DIR$/src/forms/BasicForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="568">
           <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Forms/PersonalCarForm.java">
+    <entry file="file://$PROJECT_DIR$/src/forms/PersonalCarForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
           <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Forms/TruckForm.java">
+    <entry file="file://$PROJECT_DIR$/src/forms/TruckForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-200">
           <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PersonalCar/PersonalCar.java">
+    <entry file="file://$PROJECT_DIR$/src/personalCar/PersonalCar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        <state relative-caret-position="432">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Car/Car.java">
+    <entry file="file://$PROJECT_DIR$/src/car/Car.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Terminal/Autobazar.java">
+    <entry file="file://$PROJECT_DIR$/src/autobazar/Autobazar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="103" column="28" lean-forward="true" selection-start-line="103" selection-start-column="28" selection-end-line="103" selection-end-column="28" />
+        <state relative-caret-position="216">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="49" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Terminal/Menu.java">
+    <entry file="file://$PROJECT_DIR$/src/carShop/CarShop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        <state relative-caret-position="184">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Terminal/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/terminal/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        <state relative-caret-position="48">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/terminal/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
         </state>
       </provider>
     </entry>

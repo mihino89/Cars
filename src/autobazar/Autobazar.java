@@ -1,13 +1,14 @@
-package terminal;
+package autobazar;
 
 import forms.PersonalCarForm;
 import forms.TruckForm;
 import personalCar.PersonalCarList;
+import terminal.Menu;
 import trucks.TruckList;
 
 import java.util.Scanner;
 
-public class Autobazar extends Menu{
+public class Autobazar extends Menu {
     private static Scanner scanner = new Scanner(System.in);
     // Agregacia
     private static PersonalCarList personalCarList = new PersonalCarList();

@@ -1,5 +1,7 @@
 package terminal;
 
+import autobazar.Autobazar;
+import carShop.CarShop;
 import finances.Finances;
 import locales.Messages;
 
@@ -9,6 +11,7 @@ public class Menu extends Messages {
     private static Scanner scanner = new Scanner(System.in);
     private static Finances finances = new Finances();
     private static Autobazar autobazar;
+    private static CarShop carShop;
 
     private final int startingCapital = 1000;
 
@@ -20,8 +23,8 @@ public class Menu extends Messages {
             mainDialog();
             switch (scanInput()) {
                 case 0:
-                    System.out.println("ahooj");
-                    break;
+                    carShop = new CarShop();
+                    carShop.dialog();
                 case 1:
                     autobazar = new Autobazar();
                     autobazar.dialog();

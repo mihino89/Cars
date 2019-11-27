@@ -28,7 +28,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="terminal.Autobazar" project="ArrayList" file="/ArrayList/src/terminal/Main.java"
+  <class id="4" language="java" name="autobazar.Autobazar" project="ArrayList" file="/ArrayList/src/terminal/Main.java"
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="316" width="237" x="1160" y="-152"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
