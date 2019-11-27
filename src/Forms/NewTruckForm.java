@@ -46,7 +46,8 @@ public class NewTruckForm {
         System.out.println("\tNie: (stlač 0):");
         this.hasSemiTrailer = hasTrailer();
 
-        return new Truck(basicForm.getName(), basicForm.getType(), basicForm, this.maxWeight, this.hasSemiTrailer);
+        return new Truck(basicForm.getName(), basicForm.getType(), basicForm.getWheels(),
+                basicForm.getDoors(), basicForm.getPrice(), basicForm.isManual(), this.maxWeight, this.hasSemiTrailer);
     }
 
 

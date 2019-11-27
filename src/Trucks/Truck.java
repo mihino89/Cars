@@ -9,8 +9,8 @@ public class Truck extends Car {
     private int maxWeight;
     private boolean hasSemiTrailer;
 
-    public Truck(String name, String type, BasicForm basicForm, int maxWeight, boolean hasSemiTrailer) {
-        super(name, type, basicForm);
+    public Truck(String name, String type, int wheels, int doors, int price, boolean isManual, int maxWeight, boolean hasSemiTrailer) {
+        super(name, type, wheels, doors, price, isManual);
         this.maxWeight = maxWeight;
         this.hasSemiTrailer = hasSemiTrailer;
     }

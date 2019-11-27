@@ -21,7 +21,6 @@ public class BasicForm {
 
     public void create(){
         System.out.println("Zadajte značku vozidla:");
-//        scanner.nextLine();
         this.name = scanner.next();
         scanner.nextLine();
 
@@ -61,6 +60,10 @@ public class BasicForm {
 
     public int getPrice() {
         return price;
+    }
+
+    public boolean isManual() {
+        return isManual;
     }
 
     public void setName(String name) {

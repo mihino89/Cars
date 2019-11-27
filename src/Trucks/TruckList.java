@@ -22,10 +22,10 @@ public class TruckList {
                 hasSemiTrailer = "nie";
             }
             System.out.println((i + 1) +
-            ". Značka: " + truckArrayList.get(i).getBasicForm().getName() +
-            ", Typ: " + truckArrayList.get(i).getBasicForm().getType() +
-            ", Počet kolies: " + truckArrayList.get(i).getBasicForm().getWheels() +
-            ", Počet dverí je: " + truckArrayList.get(i).getBasicForm().getDoors() +
+            ". Značka: " + truckArrayList.get(i).getName() +
+            ", Typ: " + truckArrayList.get(i).getType() +
+            ", Počet kolies: " + truckArrayList.get(i).getWheels() +
+            ", Počet dverí je: " + truckArrayList.get(i).getDoors() +
             ", Maximálna zátaž vozidla: " + truckArrayList.get(i).getMaxWeight() +
             ", Má príves: " + hasSemiTrailer
             );
@@ -34,7 +34,7 @@ public class TruckList {
 
     private int findTruckByName(String searchedCar){
         for(int i = 0; i < truckArrayList.size(); i++){
-            if(searchedCar.equals(truckArrayList.get(i).getBasicForm().getName())){
+            if(searchedCar.equals(truckArrayList.get(i).getName())){
                 return i;
             }
         }
@@ -61,7 +61,7 @@ public class TruckList {
         int price = -1;
 
         if(position >= 0){
-            price = truckArrayList.get(position).getBasicForm().getPrice();
+            price = truckArrayList.get(position).getPrice();
             removeTruck(position);
             return price;
         }
@@ -84,8 +84,8 @@ public class TruckList {
 
         System.out.println("Zadajte nový názov nákladného auta: " + truckName);
         newTruckName = scanner.nextLine();
-        truckArrayList.get(position).getBasicForm().setName(newTruckName);
-        System.out.println("Nový názov nákladného auta je: " + truckArrayList.get(position).getBasicForm().getName());
+        truckArrayList.get(position).setName(newTruckName);
+        System.out.println("Nový názov nákladného auta je: " + truckArrayList.get(position).getName());
     }
 
     private void modifyTruckPrice(int position, String truckName){
@@ -93,9 +93,9 @@ public class TruckList {
 
         System.out.println("Zadajte novú cenu nákladného auta: " + truckName);
         newPrice = scanner.nextInt();
-        truckArrayList.get(position).getBasicForm().setPrice(newPrice);
+        truckArrayList.get(position).setPrice(newPrice);
 
-        System.out.println("Nová cena nákladného auta je: " + truckArrayList.get(position).getBasicForm().getPrice());
+        System.out.println("Nová cena nákladného auta je: " + truckArrayList.get(position).getPrice());
     }
 
     private void modifyTruckType(int position, String truckName){
@@ -103,9 +103,9 @@ public class TruckList {
 
         System.out.println("Zadajte nový typ nákladného auta: " + truckName);
         newTruckType = scanner.nextLine();
-        truckArrayList.get(position).getBasicForm().setType(newTruckType);
+        truckArrayList.get(position).setType(newTruckType);
 
-        System.out.println("Nový typ nákladného auta je: " + truckArrayList.get(position).getBasicForm().getType());
+        System.out.println("Nový typ nákladného auta je: " + truckArrayList.get(position).getType());
     }
 
     private void modifyMaxWeight(int position, String truckName){

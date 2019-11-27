@@ -5,6 +5,8 @@ import PersonalCar.PersonalCar;
 import java.util.Scanner;
 
 public class NewPersonalCarForm{
+    private static Scanner scanner = new Scanner(System.in);
+
     private boolean forChildren;
     private BasicForm basicForm;
 
@@ -12,8 +14,6 @@ public class NewPersonalCarForm{
         this.forChildren = forChildren;
         this.basicForm = basicForm;
     }
-
-    private static Scanner scanner = new Scanner(System.in);
 
 
     public PersonalCar create() {
@@ -37,6 +37,7 @@ public class NewPersonalCarForm{
             this.forChildren = false;
         }
 
-        return new PersonalCar(basicForm.getName(), basicForm.getType(), basicForm, this.forChildren);
+        return new PersonalCar(basicForm.getName(), basicForm.getType(), basicForm.getWheels(),
+                basicForm.getDoors(), basicForm.getPrice(), basicForm.isManual(), this.forChildren);
     }
 }

@@ -6,8 +6,8 @@ import Forms.BasicForm;
 public class PersonalCar extends Car {
     private boolean forChildren;
 
-    public PersonalCar(String name, String type, BasicForm basicForm, boolean forChildren) {
-        super(name, type, basicForm);
+    public PersonalCar(String name, String type, int wheels, int doors, int price, boolean isManual, boolean forChildren) {
+        super(name, type, wheels, doors, price, isManual);
         this.forChildren = forChildren;
     }
 
