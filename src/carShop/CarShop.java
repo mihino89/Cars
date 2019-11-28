@@ -1,5 +1,9 @@
 package carShop;
 
+import car.CarTypes;
+import car.Saab.Saab;
+import car.Saab.SaabDialog;
+
 import java.util.Scanner;
 
 public class CarShop {
@@ -22,13 +26,14 @@ public class CarShop {
                     printInstructions();
                     break;
                 case 1:
-                    System.out.println("saaab");;
+                    SaabDialog saabDialog = new SaabDialog();
+                    saabDialog.saabDialog();
                     break;
                 case 2:
-                    System.out.println("Ford");
+//                    printModelsOfCarBrand("Ford");
                     break;
                 case 3:
-                    System.out.println("Jeep");
+//                    printModelsOfCarBrand("Jeep");
                     break;
                 case 4:
                     quit = true;
