@@ -2,8 +2,10 @@ package autobazar;
 
 import forms.PersonalCarForm;
 import forms.TruckForm;
+import personalCar.IPersonalCarList;
 import personalCar.PersonalCarList;
 import terminal.Menu;
+import trucks.ITruckList;
 import trucks.TruckList;
 
 import java.util.Scanner;
@@ -11,8 +13,8 @@ import java.util.Scanner;
 public class Autobazar extends Menu {
     private static Scanner scanner = new Scanner(System.in);
     // Agregacia
-    private static PersonalCarList personalCarList = new PersonalCarList();
-    private static TruckList truckList = new TruckList();
+    private IPersonalCarList personalCarList = new PersonalCarList();
+    private ITruckList truckList = new TruckList();
 
     public void dialog() {
          boolean quit = false, hasNextInt;

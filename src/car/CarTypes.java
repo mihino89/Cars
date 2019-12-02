@@ -26,7 +26,7 @@ public class CarTypes {
     };
 
     private String[] jeep = new String[]{
-        "Cherokee",
+        "Cherokee 4x4",
         "Wrangler",
         "Compass",
     };
@@ -38,7 +38,7 @@ public class CarTypes {
                 return ford;
             case "saab":
                 return saab;
-            case "Jeep":
+            case "jeep":
                 return jeep;
         }
         return null;

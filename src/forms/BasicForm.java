@@ -19,7 +19,7 @@ public class BasicForm {
         this.price = price;
     }
 
-    public void create(){
+    protected void create(){
         System.out.println("Zadajte značku vozidla:");
         this.name = scanner.next();
         scanner.nextLine();

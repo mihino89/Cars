@@ -28,8 +28,13 @@ public class JeepDialog extends CarShop {
 
             switch (choice){
                 case 0:
-                    if(carTypes.areYouSure("Jeep","Cherokee", 41000)){
-                        Jeep jeep = new Jeep("Cherokee", 5, 41000, true);
+                    if(carTypes.areYouSure("Jeep","Cherokee 4x4", 41000)){
+                        Jeep jeep = new Jeep("Cherokee 4x4", 5, 41000, true);
+                        Jeep.Has4x4 has4x4 = jeep.new Has4x4();
+                        has4x4.checkHas4x4();
+                        if(has4x4.getCheckOf4x4()){
+                            System.out.println("GREAT! Your Jeep has also 4x4");
+                        }
                         System.out.println(jeep.created());
                         setBudget(41000);
                     }

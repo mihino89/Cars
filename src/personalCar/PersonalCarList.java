@@ -3,15 +3,17 @@ package personalCar;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class PersonalCarList {
+public class PersonalCarList implements IPersonalCarList{
     private ArrayList<PersonalCar> personalCarArrayList = new ArrayList<PersonalCar>();
     private static Scanner scanner = new Scanner(System.in);
 
     //Asociacia
+    @Override
     public void addCar(PersonalCar personalCar){
         personalCarArrayList.add(personalCar);
     }
 
+    @Override
     public void printCarList(){
         System.out.println("Počet nájdených osobných áut v databáze: " + personalCarArrayList.size());
         String isForChildren;
@@ -46,6 +48,7 @@ public class PersonalCarList {
         personalCarArrayList.remove(position);
     }
 
+    @Override
     public void removeCar(String carName, String errorMessage){
         int position = findCarByName(carName);
 
@@ -57,6 +60,7 @@ public class PersonalCarList {
         }
     }
 
+    @Override
     public int buyCar(String carName, String errorMessage){
         int position = findCarByName(carName);
         int price = -1;
@@ -108,6 +112,7 @@ public class PersonalCarList {
         System.out.println("Nový typ auta je: " + personalCarArrayList.get(position).getType());
     }
 
+    @Override
     public void modifyCar(String carName){
         int position = findCarByName(carName);
         int choice = 0;

@@ -3,14 +3,16 @@ package trucks;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class TruckList {
+public class TruckList implements ITruckList {
     private ArrayList<Truck> truckArrayList = new ArrayList<Truck>();
     private static Scanner scanner = new Scanner(System.in);
 
+    @Override
     public void addTruck(Truck truck){
         truckArrayList.add(truck);
     }
 
+    @Override
     public void printTruckList(){
         System.out.println("Počet nájdených nákladných áut v databáze: " + truckArrayList.size());
         String hasSemiTrailer;
@@ -45,6 +47,7 @@ public class TruckList {
         truckArrayList.remove(position);
     }
 
+    @Override
     public void removeTruck(String truckName, String errorMessage){
         int position = findTruckByName(truckName);
 
@@ -56,6 +59,7 @@ public class TruckList {
         }
     }
 
+    @Override
     public int buyTruck(String truckName, String errorMessage){
         int position = findTruckByName(truckName);
         int price = -1;
@@ -119,6 +123,7 @@ public class TruckList {
         System.out.println("Nová maximálna záťaž nákladného auta je: " + truckArrayList.get(position).getMaxWeight());
     }
 
+    @Override
     public void modifyTruck(String truckName){
         int position = findTruckByName(truckName);
         int choice = 0;
@@ -145,7 +150,8 @@ public class TruckList {
                         modifyTruckType(position, truckName);
                         break;
                     case 4:
-
+                        modifyMaxWeight(position, truckName);
+                        break;
                     case 5:
                         quit = true;
                         break;
