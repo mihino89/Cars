@@ -1,4 +1,4 @@
-package carShop.Saab;
+package carShop.saab;
 
 import car.Car;
 
@@ -9,6 +9,6 @@ public class Saab extends Car {
 
     @Override
     public String created() {
-        return "Car Saab was created.";
+        return "Car saab was created.";
     }
 }

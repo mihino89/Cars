@@ -6,8 +6,8 @@ public class CarTypes {
     private static Scanner scanner = new Scanner(System.in);
 
     private String[] brand = new String[]{
-        "Saab",
-        "Ford",
+        "saab",
+        "ford",
         "Jeep"
     };
 
@@ -29,15 +29,14 @@ public class CarTypes {
         "Cherokee",
         "Wrangler",
         "Compass",
-        "Renegade"
     };
 
 
     private String[] recognizeCarBrand(String carBrand){
         switch (carBrand){
-            case "Ford":
+            case "ford":
                 return ford;
-            case "Saab":
+            case "saab":
                 return saab;
             case "Jeep":
                 return jeep;

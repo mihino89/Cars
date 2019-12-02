@@ -1,7 +1,9 @@
 package carShop;
 
 import car.CarTypes;
-import carShop.Saab.SaabDialog;
+import carShop.ford.FordDialog;
+import carShop.jeep.JeepDialog;
+import carShop.saab.SaabDialog;
 import terminal.Menu;
 
 import java.util.Scanner;
@@ -31,10 +33,12 @@ public class CarShop extends Menu {
                     saabDialog.saabDialog();
                     break;
                 case 2:
-//                    printModelsOfCarBrand("Ford");
+                    FordDialog fordDialog = new FordDialog(carTypes);
+                    fordDialog.fordDialog();
                     break;
                 case 3:
-//                    printModelsOfCarBrand("Jeep");
+                    JeepDialog jeepDialog = new JeepDialog(carTypes);
+                    jeepDialog.jeepDialog();
                     break;
                 case 4:
                     quit = true;
@@ -46,8 +50,8 @@ public class CarShop extends Menu {
     private void printInstructions() {
         System.out.println("\n Press");
         System.out.println("\t 0 - Menu predajne");
-        System.out.println("\t 1 - Saab");
-        System.out.println("\t 2 - Ford");
+        System.out.println("\t 1 - saab");
+        System.out.println("\t 2 - ford");
         System.out.println("\t 3 - Jeep");
         System.out.println("\t 4 - Spať na hlavné menu");
     }
