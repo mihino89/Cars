@@ -25,6 +25,7 @@ public class Menu extends Messages {
                 case 0:
                     carShop = new CarShop();
                     carShop.dialog();
+                    break;
                 case 1:
                     autobazar = new Autobazar();
                     autobazar.dialog();
@@ -59,8 +60,8 @@ public class Menu extends Messages {
         return choice;
     }
 
-    protected void setBudget(int price){
-        finances.income(price);
+    public void setBudget(int income){
+        finances.income(income);
     }
 
     private void setBudget(){

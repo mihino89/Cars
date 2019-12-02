@@ -1,6 +1,10 @@
 package car;
 
+import java.util.Scanner;
+
 public class CarTypes {
+    private static Scanner scanner = new Scanner(System.in);
+
     private String[] brand = new String[]{
         "Saab",
         "Ford",
@@ -41,13 +45,39 @@ public class CarTypes {
         return null;
     }
 
-    protected void printModelsOfCarBrand(String selectedBrand){
+    public void printModelsOfCarBrand(String selectedBrand){
         String[] arr;
+        int i;
 
         arr = recognizeCarBrand(selectedBrand);
 
-        for(int i = 0; i < arr.length; i++){
+        for(i = 0; i < arr.length; i++){
             System.out.println(i + ". " + arr[i]);
         }
+        System.out.println(i + ". " + " Spat na menu obchodu s autami");
+    }
+
+    public boolean areYouSure(String carBrand, String carModel, int price){
+        int chooseCattegory = -1;
+
+        System.out.println("Naozaj chcete kupit auto" + carBrand + ", " + carModel + " for " + price + " eur ?");
+        System.out.println("\tAno: (stlač 1):");
+        System.out.println("\tNie: (stlač 0):");
+        boolean hasNextInt = scanner.hasNextInt();
+        if(hasNextInt){
+            chooseCattegory = scanner.nextInt();
+            if(chooseCattegory == 1){
+                scanner.nextLine();
+                return true;
+            } else if(chooseCattegory == 0){
+                scanner.nextLine();
+                return false;
+            }
+            else {
+                areYouSure(carBrand, carModel, price);
+            }
+        }
+
+        return false;
     }
 }

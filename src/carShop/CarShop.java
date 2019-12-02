@@ -1,13 +1,14 @@
 package carShop;
 
 import car.CarTypes;
-import car.Saab.Saab;
-import car.Saab.SaabDialog;
+import carShop.Saab.SaabDialog;
+import terminal.Menu;
 
 import java.util.Scanner;
 
-public class CarShop {
+public class CarShop extends Menu {
     private static Scanner scanner = new Scanner(System.in);
+    private static CarTypes carTypes = new CarTypes();
 
     public void dialog(){
         boolean quit = false, hasNextInt;
@@ -26,7 +27,7 @@ public class CarShop {
                     printInstructions();
                     break;
                 case 1:
-                    SaabDialog saabDialog = new SaabDialog();
+                    SaabDialog saabDialog = new SaabDialog(carTypes);
                     saabDialog.saabDialog();
                     break;
                 case 2:
