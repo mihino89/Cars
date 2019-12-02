@@ -11,6 +11,7 @@ import java.util.Scanner;
 public class CarShop extends Menu {
     private static Scanner scanner = new Scanner(System.in);
     private static CarTypes carTypes = new CarTypes();
+    private static int counter = 0;
 
     public void dialog(){
         boolean quit = false, hasNextInt;
@@ -33,7 +34,7 @@ public class CarShop extends Menu {
                     saabDialog.saabDialog();
                     break;
                 case 2:
-                    FordDialog fordDialog = new FordDialog(carTypes);
+                    FordDialog fordDialog = new FordDialog(carTypes, counter);
                     fordDialog.fordDialog();
                     break;
                 case 3:
@@ -45,6 +46,14 @@ public class CarShop extends Menu {
                     break;
             }
         }
+    }
+
+    public static void addCounter() {
+        CarShop.counter ++;
+    }
+
+    public static int getCounter() {
+        return counter;
     }
 
     private void printInstructions() {

@@ -9,15 +9,12 @@ import java.util.Scanner;
 
 public class Menu extends Messages {
     private static Scanner scanner = new Scanner(System.in);
-    private static Finances finances = new Finances();
+    private static Finances finances = new Finances(1000);
     private static Autobazar autobazar;
     private static CarShop carShop;
 
-    private final int startingCapital = 1000;
-
     public void createDialog(){
         boolean quit = false;
-        setBudget();
 
         while(!quit){
             mainDialog();
@@ -60,15 +57,11 @@ public class Menu extends Messages {
         return choice;
     }
 
-    public void setBudget(int income){
+    protected void setBudget(int income){
         finances.income(income);
     }
 
-    private void setBudget(){
-        finances.setBudget(startingCapital);
-    }
-
-    protected void getBudget(){
+    private void getBudget(){
         System.out.println("Aktualny stav financii: " + finances.getBudget());
     }
 }

@@ -6,8 +6,8 @@ public class CarTypes {
     private static Scanner scanner = new Scanner(System.in);
 
     private String[] brand = new String[]{
-        "saab",
-        "ford",
+        "Saab",
+        "Ford",
         "Jeep"
     };
 
@@ -31,6 +31,16 @@ public class CarTypes {
         "Compass",
     };
 
+    public void deleteModel(int index){
+        for(int i = 0; i <= index; i++){
+            if(i == index){
+                for(int j = i; j < index; j++){
+                    ford[j] = ford[j+1];
+                }
+                break;
+            }
+        }
+    }
 
     private String[] recognizeCarBrand(String carBrand){
         switch (carBrand){

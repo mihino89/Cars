@@ -8,6 +8,12 @@ import java.util.Scanner;
 public class FordDialog extends CarShop {
     private CarTypes carTypes;
     private static Scanner scanner = new Scanner(System.in);
+    private int counter;
+
+    public FordDialog(CarTypes carTypes, int counter) {
+        this.carTypes = carTypes;
+        this.counter = counter;
+    }
 
     public FordDialog(CarTypes carTypes) {
         this.carTypes = carTypes;
@@ -35,10 +41,16 @@ public class FordDialog extends CarShop {
                     }
                     break;
                 case 1:
-                    if(carTypes.areYouSure("Ford","Focus", 24000)){
-                        Ford ford = new Ford("Focus", 5, 24000, false);
-                        System.out.println(ford.created());
-                        setBudget(24000);
+                    if(getCounter() < 2){
+                        if(carTypes.areYouSure("Ford","Focus", 24000)){
+                            Ford ford = new Ford("Focus", 5, 24000, false);
+                            System.out.println(ford.created());
+                            addCounter();
+                            setBudget(24000);
+                        }
+                    } else {
+                        System.out.println("Ford focus je docastne vypredany");
+                        carTypes.deleteModel(1);
                     }
                     break;
                 case 2:

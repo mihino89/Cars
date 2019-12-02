@@ -21,7 +21,6 @@ public class PersonalCarForm {
 
         System.out.println("Vitajte vo formulári pre pridanie nového auta");
 
-        //kompozicia
         this.basicForm = new BasicForm();
         basicForm.create();
 
