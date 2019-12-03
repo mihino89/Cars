@@ -13,6 +13,11 @@ public class PersonalCarList implements IPersonalCarList{
         personalCarArrayList.add(personalCar);
     }
 
+    private void press(){
+        System.out.println("\tAno: (stlač 1):");
+        System.out.println("\tNie: (stlač 0):");
+    }
+
     @Override
     public void printCarList(){
         System.out.println("Počet nájdených osobných áut v databáze: " + personalCarArrayList.size());
@@ -60,15 +65,66 @@ public class PersonalCarList implements IPersonalCarList{
         }
     }
 
+    private boolean areYouSure(String carName){
+        int chooseCattegory = -1;
+
+        System.out.println("Naozaj chcete kupit auto " + carName + " ?");
+        press();
+        boolean hasNextInt = scanner.hasNextInt();
+        if(hasNextInt){
+            chooseCattegory = scanner.nextInt();
+            if(chooseCattegory == 1){
+                scanner.nextLine();
+                return true;
+            } else if(chooseCattegory == 0){
+                scanner.nextLine();
+                return false;
+            }
+            else {
+                areYouSure(carName);
+            }
+        }
+
+        return false;
+    }
+
+    private void testingDrive(PersonalCar personalCar, int km){
+        personalCar.move(km);
+    }
+
+    private boolean testinDrive(){
+        boolean hasNextInt;
+        int choice = -1;
+
+        System.out.println("Do you want testing drive?");
+        press();
+        hasNextInt = scanner.hasNextInt();
+        if(hasNextInt){
+            choice = scanner.nextInt();
+        }
+        if(choice == 1){
+            return true;
+        }
+
+        return false;
+    }
+
     @Override
     public int buyCar(String carName, String errorMessage){
         int position = findCarByName(carName);
-        int price = -1;
+        int price = -1, lengtOfTestingDrive = 0;
 
         if(position >= 0){
-            price = personalCarArrayList.get(position).getPrice();
-            removeCar(position);
-            return price;
+            if(testinDrive()){
+                System.out.println("How many kilometers do you want testing drive?");
+                lengtOfTestingDrive = scanner.nextInt();
+                testingDrive(personalCarArrayList.get(position), lengtOfTestingDrive);
+                if(areYouSure(carName)){
+                    price = personalCarArrayList.get(position).getPrice();
+                    removeCar(position);
+                    return price;
+                }
+            }
         }
 
         System.out.println(errorMessage);

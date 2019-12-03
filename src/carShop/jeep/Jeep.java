@@ -4,12 +4,19 @@ import car.Car;
 
 public class Jeep extends Car {
     public Jeep(String type, int doors, int price, boolean isManual) {
-        super("Jeep", type, 4, doors, price, isManual);
+        super("Jeep", type, 0, 4, doors, price, isManual);
     }
 
     @Override
     public String created() {
         return "Jeep was created.";
+    }
+
+    @Override
+    public void move(int km) {
+        System.out.println("Presli ste s autom Jeep " + getType() + " " + km + " km.");
+        setPassedKm(getPassedKm() + km);
+        System.out.println("Actual car clock is: " + getPassedKm());
     }
 
     class Has4x4 {

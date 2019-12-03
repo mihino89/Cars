@@ -10,13 +10,6 @@ public class TruckForm {
     private int choice;
     private BasicForm basicForm;
 
-    public TruckForm() {
-        this.maxWeight = maxWeight;
-        this.hasSemiTrailer = hasSemiTrailer;
-        this.choice = choice;
-        this.basicForm = basicForm;
-    }
-
     private static Scanner scanner = new Scanner(System.in);
 
     private boolean hasTrailer(){
@@ -35,19 +28,19 @@ public class TruckForm {
     public Truck create(){
         System.out.println("Vitajte vo formulári pre pridanie nového nákladného auta");
 
-        this.basicForm = new BasicForm();
+        basicForm = new BasicForm();
         basicForm.create();
 
         System.out.println("Zadajte maximálnu zátaž nákladu");
-        this.maxWeight = scanner.nextInt();
+        maxWeight = scanner.nextInt();
 
         System.out.println("Je k autu aj príves?");
         System.out.println("\tÁno: (stlač 1):");
         System.out.println("\tNie: (stlač 0):");
-        this.hasSemiTrailer = hasTrailer();
+        hasSemiTrailer = hasTrailer();
 
-        return new Truck(basicForm.getName(), basicForm.getType(), basicForm.getWheels(),
-                basicForm.getDoors(), basicForm.getPrice(), basicForm.isManual(), this.maxWeight, this.hasSemiTrailer);
+        return new Truck(basicForm.getName(), basicForm.getType(), basicForm.getPassedKm(), basicForm.getWheels(),
+                basicForm.getDoors(), basicForm.getPrice(), basicForm.isManual(), maxWeight, hasSemiTrailer);
     }
 
 

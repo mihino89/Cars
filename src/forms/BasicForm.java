@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class BasicForm {
     private String name;
     private String type;
+    private int passedKm;
     private int wheels;
     private int doors;
     private int price;
@@ -12,34 +13,30 @@ public class BasicForm {
 
     private static Scanner scanner = new Scanner(System.in);
 
-    public BasicForm() {
-        this.wheels = wheels;
-        this.doors = doors;
-        this.isManual = isManual;
-        this.price = price;
-    }
-
     protected void create(){
         System.out.println("Zadajte značku vozidla:");
-        this.name = scanner.next();
+        name = scanner.next();
         scanner.nextLine();
 
         System.out.println("Zadajte typ auta:");
-        this.type = scanner.nextLine();
+        type = scanner.nextLine();
+
+        System.out.println("Zadajte pocet prejdenych kilometrov:");
+        passedKm = scanner.nextInt();
 
         System.out.println("Zadajte počet kolies auta:");
-        this.wheels = scanner.nextInt();
+        wheels = scanner.nextInt();
 
         System.out.println("Zadajte počet dverí auta:");
-        this.doors = scanner.nextInt();
+        doors = scanner.nextInt();
 
         System.out.println("Zadajte typ prevodovky auta:");
         System.out.println("\tManual: (stlačte 1):");
         System.out.println("\tAutomat: (stlačte 0):");
-        this.isManual = scanner.nextInt() == 1;
+        isManual = scanner.nextInt() == 1;
 
         System.out.println("Zadajte cenu (v eurách) auta:");
-        this.price = scanner.nextInt();
+        price = scanner.nextInt();
     }
 
     public String getName() {
@@ -66,7 +63,11 @@ public class BasicForm {
         return isManual;
     }
 
+    public int getPassedKm() {
+        return passedKm;
+    }
+
     public void setName(String name) {
-        this.name = name;
+        name = name;
     }
 }

@@ -15,7 +15,7 @@ public class SaabDialog extends CarShop {
 
     public void saabDialog(){
         boolean quit = false, hasNextInt;
-        int choice = 0;
+        int choice = 0, lengtOfTestingDrive;
         while(!quit){
             System.out.println("Vyberte model znacky Saab o ktory mate zaujem.");
             carTypes.printModelsOfCarBrand("saab");
@@ -28,24 +28,36 @@ public class SaabDialog extends CarShop {
 
             switch (choice){
                 case 0:
-                    if(carTypes.areYouSure("saab","Aero-X", 68000)){
+                    if(carTypes.testinDrive()){
                         Saab saab = new Saab("Aero-X", 3, 68000, true);
-                        System.out.println(saab.created());
-                        setBudget(68000);
+                        lengtOfTestingDrive = carTypes.testingDrive();
+                        saab.move(lengtOfTestingDrive);
+                        if(carTypes.areYouSure("saab","Aero-X", 68000)){
+                            System.out.println(saab.created());
+                            setBudget(68000);
+                        }
                     }
                     break;
                 case 1:
-                    if(carTypes.areYouSure("saab","9-5", 21000)){
+                    if(carTypes.testinDrive()){
                         Saab saab = new Saab("9-5", 5, 21000, false);
-                        System.out.println(saab.created());
-                        setBudget(21000);
+                        lengtOfTestingDrive = carTypes.testingDrive();
+                        saab.move(lengtOfTestingDrive);
+                        if(carTypes.areYouSure("saab","9-5", 21000)){
+                            System.out.println(saab.created());
+                            setBudget(21000);
+                        }
                     }
                     break;
                 case 2:
-                    if(carTypes.areYouSure("saab","PhoeniX", 85000)){
+                    if(carTypes.testinDrive()){
                         Saab saab = new Saab("PhoeniX", 3, 85000, true);
-                        System.out.println(saab.created());
-                        setBudget(85000);
+                        lengtOfTestingDrive = carTypes.testingDrive();
+                        saab.move(lengtOfTestingDrive);
+                        if(carTypes.areYouSure("saab","PhoeniX", 85000)){
+                            System.out.println(saab.created());
+                            setBudget(85000);
+                        }
                     }
                     break;
                 case 3:

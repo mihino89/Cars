@@ -36,7 +36,7 @@ public class PersonalCarForm {
             this.forChildren = false;
         }
 
-        return new PersonalCar(basicForm.getName(), basicForm.getType(), basicForm.getWheels(),
+        return new PersonalCar(basicForm.getName(), basicForm.getType(), basicForm.getPassedKm(), basicForm.getWheels(),
                 basicForm.getDoors(), basicForm.getPrice(), basicForm.isManual(), this.forChildren);
     }
 }

@@ -31,6 +31,11 @@ public class CarTypes {
         "Compass",
     };
 
+    private void press(){
+        System.out.println("\tAno: (stlač 1):");
+        System.out.println("\tNie: (stlač 0):");
+    }
+
     public void deleteModel(int index){
         for(int i = 0; i <= index; i++){
             if(i == index){
@@ -70,8 +75,7 @@ public class CarTypes {
         int chooseCattegory = -1;
 
         System.out.println("Naozaj chcete kupit auto" + carBrand + ", " + carModel + " for " + price + " eur ?");
-        System.out.println("\tAno: (stlač 1):");
-        System.out.println("\tNie: (stlač 0):");
+        press();
         boolean hasNextInt = scanner.hasNextInt();
         if(hasNextInt){
             chooseCattegory = scanner.nextInt();
@@ -88,5 +92,31 @@ public class CarTypes {
         }
 
         return false;
+    }
+
+    public boolean testinDrive(){
+        boolean hasNextInt;
+        int choice = -1;
+
+        System.out.println("Chcete vyskusat auto na testovacej jazde?");
+        press();
+        hasNextInt = scanner.hasNextInt();
+        if(hasNextInt){
+            choice = scanner.nextInt();
+        }
+        if(choice == 1){
+            return true;
+        }
+
+        return false;
+    }
+
+    public int testingDrive(){
+        int lengtOfTestingDrive = 0;
+
+        System.out.println("How many kilometers do you want testing drive?");
+        lengtOfTestingDrive = scanner.nextInt();
+
+        return lengtOfTestingDrive;
     }
 }

@@ -3,7 +3,7 @@ package finances;
 public class Finances {
     private int budget;
 
-    public Finances(int budget) {
+    public Finances() {
         this.budget = budget;
     }
 
@@ -14,5 +14,9 @@ public class Finances {
 
     public int getBudget() {
         return budget;
+    }
+
+    public void setBudget(int budget) {
+        this.budget = budget;
     }
 }
