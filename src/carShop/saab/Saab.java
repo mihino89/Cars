@@ -9,13 +9,13 @@ public class Saab extends Car {
 
     @Override
     public String created() {
-        return "Car saab was created.";
+        return "Auto Saab bolo vytvorene.";
     }
 
     @Override
     public void move(int km) {
         System.out.println("Presli ste s autom Saab " + getType() + " " + km + " km.");
         setPassedKm(getPassedKm() + km);
-        System.out.println("Actual car clock is: " + getPassedKm());
+        System.out.println("Aktualny stav tachometra : " + getPassedKm());
     }
 }

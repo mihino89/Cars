@@ -13,7 +13,7 @@ public class BasicForm {
 
     private static Scanner scanner = new Scanner(System.in);
 
-    protected void create(){
+    public void create(){
         System.out.println("Zadajte značku vozidla:");
         name = scanner.next();
         scanner.nextLine();

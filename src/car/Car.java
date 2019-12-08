@@ -35,4 +35,20 @@ public abstract class Car extends Vehicle {
     public void setPrice(int price) {
         this.price = price;
     }
+
+    public boolean isManual() {
+        return isManual;
+    }
+
+    public void setManual(boolean manual) {
+        isManual = manual;
+    }
+
+    public void setWheels(int wheels) {
+        this.wheels = wheels;
+    }
+
+    public void setDoors(int doors) {
+        this.doors = doors;
+    }
 }

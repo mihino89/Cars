@@ -1,9 +1,13 @@
 package carShop;
 
+import car.Car;
 import car.CarTypes;
+import carShop.custom.CustomCar;
 import carShop.ford.FordDialog;
 import carShop.jeep.JeepDialog;
 import carShop.saab.SaabDialog;
+import forms.BasicForm;
+import personalCar.PersonalCar;
 import terminal.Menu;
 
 import java.util.Scanner;
@@ -42,6 +46,17 @@ public class CarShop extends Menu {
                     jeepDialog.jeepDialog();
                     break;
                 case 4:
+                    BasicForm basicForm = new BasicForm();
+                    basicForm.create();
+                    CustomCar customCar = new CustomCar(basicForm.getName(), basicForm.getType(),
+                            basicForm.getPassedKm(), basicForm.getWheels(), basicForm.getDoors(), basicForm.getPrice(),
+                            basicForm.isManual(), true);
+                    PersonalCar personalCar = customCar;
+                    if(personalCar instanceof PersonalCar){
+                        CustomCar customCar1 = (CustomCar) personalCar;
+                        System.out.println(customCar1.created());
+                    }
+                case 5:
                     quit = true;
                     break;
             }
@@ -59,9 +74,10 @@ public class CarShop extends Menu {
     private void printInstructions() {
         System.out.println("\n Press");
         System.out.println("\t 0 - Menu predajne");
-        System.out.println("\t 1 - saab");
-        System.out.println("\t 2 - ford");
+        System.out.println("\t 1 - Saab");
+        System.out.println("\t 2 - Ford");
         System.out.println("\t 3 - Jeep");
-        System.out.println("\t 4 - Spať na hlavné menu");
+        System.out.println("\t 4 - Ine");
+        System.out.println("\t 5 - Spať na hlavné menu");
     }
 }

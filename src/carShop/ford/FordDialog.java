@@ -1,5 +1,6 @@
 package carShop.ford;
 
+import car.Car;
 import car.CarTypes;
 import carShop.CarShop;
 
@@ -13,10 +14,6 @@ public class FordDialog extends CarShop {
     public FordDialog(CarTypes carTypes, int counter) {
         this.carTypes = carTypes;
         this.counter = counter;
-    }
-
-    public FordDialog(CarTypes carTypes) {
-        this.carTypes = carTypes;
     }
 
     public void fordDialog(){
@@ -36,7 +33,8 @@ public class FordDialog extends CarShop {
                 case 0:
                     if(carTypes.areYouSure("Ford","Fiesta", 12000)){
                         Ford ford = new Ford("Fiesta", 3, 12000, true);
-                        System.out.println(ford.created());
+                        Car car = ford;
+                        System.out.println(car.created());
                         setBudget(12000);
                     }
                     break;
@@ -44,7 +42,8 @@ public class FordDialog extends CarShop {
                     if(getCounter() < 2){
                         if(carTypes.areYouSure("Ford","Focus", 24000)){
                             Ford ford = new Ford("Focus", 5, 24000, false);
-                            System.out.println(ford.created());
+                            Car car = (Car) ford;
+                            System.out.println(car.created());
                             addCounter();
                             setBudget(24000);
                         }

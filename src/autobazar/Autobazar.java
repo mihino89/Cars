@@ -12,7 +12,6 @@ import java.util.Scanner;
 
 public class Autobazar extends Menu {
     private static Scanner scanner = new Scanner(System.in);
-    // Agregacia
     private IPersonalCarList personalCarList = new PersonalCarList();
     private ITruckList truckList = new TruckList();
 

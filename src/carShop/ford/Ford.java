@@ -9,13 +9,13 @@ public class Ford extends Car {
 
     @Override
     public String created() {
-        return "Ford was created.";
+        return "Ford bol vytvoreny.";
     }
 
     @Override
     public void move(int km) {
         System.out.println("Presli ste s autom Ford " + getType() + " " + km + " km.");
         setPassedKm(getPassedKm() + km);
-        System.out.println("Actual car clock is: " + getPassedKm());
+        System.out.println("Aktualny stav tachometra: " + getPassedKm());
     }
 }

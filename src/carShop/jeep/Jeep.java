@@ -9,14 +9,14 @@ public class Jeep extends Car {
 
     @Override
     public String created() {
-        return "Jeep was created.";
+        return "Jeep bol vytvoreny.";
     }
 
     @Override
     public void move(int km) {
         System.out.println("Presli ste s autom Jeep " + getType() + " " + km + " km.");
         setPassedKm(getPassedKm() + km);
-        System.out.println("Actual car clock is: " + getPassedKm());
+        System.out.println("Aktualny stav tachometra: " + getPassedKm());
     }
 
     class Has4x4 {
@@ -24,7 +24,6 @@ public class Jeep extends Car {
 
         void checkHas4x4(){
             if(Jeep.super.getType().endsWith("4x4")){
-                System.out.println("Type is: " + Jeep.super.getType());
                 this.has4x4 = true;
             } else {
                 this.has4x4 = false;
