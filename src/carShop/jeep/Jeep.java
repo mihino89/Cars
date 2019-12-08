@@ -3,12 +3,15 @@ package carShop.jeep;
 import car.Car;
 
 public class Jeep extends Car {
+    private boolean created;
     public Jeep(String type, int doors, int price, boolean isManual) {
         super("Jeep", type, 0, 4, doors, price, isManual);
+        this.created = false;
     }
 
     @Override
     public String created() {
+        this.created = true;
         return "Jeep bol vytvoreny.";
     }
 
