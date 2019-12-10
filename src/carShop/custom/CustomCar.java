@@ -12,6 +12,6 @@ public class CustomCar extends PersonalCar {
     @Override
     public String created() {
         this.created = true;
-        return "Custom car " + getName() + " was created git test.";
+        return "Custom car " + getName() + " was created.";
     }
 }
