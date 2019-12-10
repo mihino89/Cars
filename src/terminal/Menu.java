@@ -42,7 +42,7 @@ public class Menu extends Messages {
     private void mainDialog(){
         System.out.println("\n Press");
         System.out.println("\t 0 - Nové autá");
-        System.out.println("\t 1 - Autobazár");
+        System.out.println("\t 1 - " + getLanguages().get("test"));
         System.out.println("\t 2 - Financie");
         System.out.println("\t 3 - Ukončiť aplikáciu");
     }
