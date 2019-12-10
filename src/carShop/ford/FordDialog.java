@@ -77,7 +77,7 @@ public class FordDialog extends CarShop {
                     quit = true;
                     break;
                 default:
-                    System.out.println(getMessages(0));
+                    System.out.println(getLanguages().get("invalid"));
             }
         }
     }

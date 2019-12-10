@@ -91,7 +91,7 @@ public class Autobazar extends Menu {
         } else if(chooseCattegory == 0){
             truckList.printTruckList();
         } else {
-            System.out.println(getMessages(0));
+            System.out.println(getLanguages().get("invalid"));
         }
     }
 
@@ -106,7 +106,7 @@ public class Autobazar extends Menu {
             TruckForm truckForm = new TruckForm();
             truckList.addTruck(truckForm.create());
         } else{
-            System.out.println(getMessages(0));
+            System.out.println(getLanguages().get("invalid"));
         }
     }
 
@@ -116,13 +116,13 @@ public class Autobazar extends Menu {
 
         switch (whichCase){
             case "remove":
-                System.out.println(getMessages(1));
+                System.out.println(getLanguages().get("car_delete"));
                 break;
             case "buy":
-                System.out.println(getMessages(2));
+                System.out.println(getLanguages().get("car_buy"));
                 break;
             case "modify":
-                System.out.println(getMessages(3));
+                System.out.println(getLanguages().get("car_edit"));
                 break;
         }
         vehicleName = scanner.nextLine();
@@ -135,9 +135,9 @@ public class Autobazar extends Menu {
 
         String vehicleName = getVehicleName("remove");
         if(chooseCategory == 1){
-            personalCarList.removeCar(vehicleName, getMessages(4));
+            personalCarList.removeCar(vehicleName, getLanguages().get("car_404"));
         } else {
-            truckList.removeTruck(vehicleName, getMessages(4));
+            truckList.removeTruck(vehicleName, getLanguages().get("car_404"));
         }
     }
 
@@ -149,11 +149,11 @@ public class Autobazar extends Menu {
 
         vehicleName = getVehicleName("buy");
         if(chooseCategory == 1){
-            price = personalCarList.buyCar(vehicleName, getMessages(4));
+            price = personalCarList.buyCar(vehicleName, getLanguages().get("car_404"));
         } else if(chooseCategory == 0){
-            price = truckList.buyTruck(vehicleName, getMessages(4));
+            price = truckList.buyTruck(vehicleName, getLanguages().get("car_404"));
         } else {
-            System.out.println(getMessages(0));
+            System.out.println(getLanguages().get("invalid"));
         }
 
         if(price >= 0){

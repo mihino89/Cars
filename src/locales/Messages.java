@@ -1,19 +1,18 @@
 package locales;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Messages {
-    private String[] messagesArray = new String[] {
-        "Invalidný vstup.",
-        "Prosím zadajte názov auta ktoré chcete vymazať.",
-        "Prosím zadajte názov auta ktoré chcete kúpit.",
-        "Prosím zadajte názov auta ktoré chcete upravovať.",
-        "Vozidlo nebolo nájdene v zozname."
-    };
+    private static Map<String, String> languages = new HashMap<String, String>() {{
+        put("invalid", "Invalidný vstup.");
+        put("car_delete", "Prosím zadajte názov auta ktoré chcete vymazať.");
+        put("car_buy", "Prosím zadajte názov auta ktoré chcete kúpit.");
+        put("car_edit", "Prosím zadajte názov auta ktoré chcete upravovať.");
+        put("car_404", "Vozidlo nebolo nájdene v zozname.");
+    }};
 
-    public String getMessages(int id){
-        if(id >= messagesArray.length){
-            return null;
-        }
-
-        return messagesArray[id];
+    public static Map<String, String> getLanguages() {
+        return languages;
     }
 }
