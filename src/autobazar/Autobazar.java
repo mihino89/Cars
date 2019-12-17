@@ -48,6 +48,9 @@ public class Autobazar extends Menu {
                      case 6:
                          quit = true;
                          break;
+                     default:
+                         quit = true;
+                         break;
                  }
              }
          }
