@@ -68,6 +68,6 @@ public class Menu extends Messages {
     }
 
     private void getBudget(){
-        System.out.println("Aktualny stav financii: " + finances.getBudget());
+        System.out.println("Aktuálny stav financií: " + finances.getBudget());
     }
 }

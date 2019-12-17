@@ -21,7 +21,7 @@ public class TruckForm {
         else if( this.choice == 0){
             return false;
         }
-        System.out.println("Bola zadaná zlá hodnota. Ano (stlač 1)/ Nie (stlač 0)");
+        System.out.println("Bola zadaná zlá hodnota. Áno (stlač 1)/ Nie (stlač 0)");
         return hasTrailer();
     }
 
