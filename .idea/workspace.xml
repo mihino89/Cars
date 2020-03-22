@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd11aa26-00c2-4cfd-8d2c-638da2a24862" name="Default Changelist" comment="fix">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="fd11aa26-00c2-4cfd-8d2c-638da2a24862" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -207,6 +205,7 @@
       <workItem from="1583341576084" duration="617000" />
       <workItem from="1584822707578" duration="137000" />
       <workItem from="1584822857662" duration="318000" />
+      <workItem from="1584870457549" duration="229000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;package conventions fixed&quot;">
       <created>1574885146507</created>
@@ -236,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575991877904</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="repo cleaning">
+      <created>1584870672222</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1584870672222</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,9 +254,14 @@
     <MESSAGE value="HashMap added, not fulled of datas" />
     <MESSAGE value="HashMap added, datas was changed from array to hash" />
     <MESSAGE value="Datas was changed from array to hash" />
-    <option name="LAST_COMMIT_MESSAGE" value="Datas was changed from array to hash" />
+    <MESSAGE value="repo cleaning" />
+    <option name="LAST_COMMIT_MESSAGE" value="repo cleaning" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="565" y="32" width="785" height="976" key="CommitChangelistDialog2" timestamp="1584870671992">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="565" y="32" width="785" height="976" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584870671992" />
     <state width="1352" height="289" key="GridCell.Tab.0.bottom" timestamp="1584822978823">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -271,6 +282,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="456" y="155" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584870412442" />
+    <state x="555" y="253" width="806" height="534" key="Vcs.Push.Dialog.v2" timestamp="1584870675340">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="555" y="253" width="806" height="534" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584870675340" />
     <state x="648" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1584870462103">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
