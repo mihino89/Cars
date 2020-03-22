@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd11aa26-00c2-4cfd-8d2c-638da2a24862" name="Default Changelist" comment="fix" />
+    <list default="true" id="fd11aa26-00c2-4cfd-8d2c-638da2a24862" name="Default Changelist" comment="fix">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,7 +71,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -167,8 +169,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Autobazar" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Autobazar" />
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Autobazar" />
       </list>
     </recent_temporary>
   </component>
@@ -263,14 +267,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1352" height="289" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584822978823" />
-    <state x="456" y="155" key="SettingsEditor" timestamp="1584822844678">
+    <state x="456" y="155" key="SettingsEditor" timestamp="1584870412442">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="456" y="155" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584822844678" />
-    <state x="648" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1584822965101">
+    <state x="456" y="155" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584870412442" />
+    <state x="648" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1584870462103">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="648" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584822965101" />
+    <state x="648" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584870462103" />
     <state x="762" y="441" width="392" height="158" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584823002994">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
